@@ -1,0 +1,65 @@
+@import './custom/responsive.css';
+@import './custom/switch.css';
+@import './custom/filter.css';
+@import './custom/collapse.css';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-header h5,
+.page-header .h5 {
+    border: none;
+}
+
+.poin {
+    cursor: pointer;
+}
+
+.offcanvas-sm,
+.offcanvas-md,
+.offcanvas-lg,
+.offcanvas-xl,
+.offcanvas-xxl,
+.offcanvas {
+    --bs-offcanvas-width: 50%;
+}
+
+@media (max-width:800px) {
+
+    .offcanvas-sm,
+    .offcanvas-md,
+    .offcanvas-lg,
+    .offcanvas-xl,
+    .offcanvas-xxl,
+    .offcanvas {
+        --bs-offcanvas-width: 100%;
+    }
+
+}
+
+.form-control {
+    border: 1px solid #e5e5e5;
+}
+
+.form-select {
+    border: 1px solid #e5e5e5;
+}
+
+.input-group-text {
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: #cecece;
+}
