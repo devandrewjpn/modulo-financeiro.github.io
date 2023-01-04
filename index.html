@@ -139,19 +139,23 @@
 		<div class="offcanvas-body">
 			<form action="">
 
-				<div class="col-12 d-flex align-items-center mt-2 mb-4">
-					<div class="form-check me-4">
-						<input class="form-check-input" type="radio" name="tipo" id="tipo1" value="option1" checked="">
-						<label class="form-check-label" for="tipo1">
-							Despesa
-						</label>
+				<div class="col-12 d-flex justify-content-between align-items-center mt-2 mb-4">
+					<div class="d-flex align-items-center">
+						<div class="form-check me-4">
+							<input class="form-check-input" type="radio" name="tipo" id="tipo1" value="option1"
+								checked="">
+							<label class="form-check-label text-primary" for="tipo1">
+								Despesa
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="tipo" id="tipo2" value="option2">
+							<label class="form-check-label text-danger" for="tipo2">
+								Receita
+							</label>
+						</div>
 					</div>
-					<div class="form-check">
-						<input class="form-check-input" type="radio" name="tipo" id="tipo2" value="option2">
-						<label class="form-check-label" for="tipo2">
-							Receita
-						</label>
-					</div>
+					<span class="badge fs-5 bg-warning mt-2">Pendente</span>
 				</div>
 
 				<div class="row">
@@ -167,6 +171,78 @@
 						</div>
 					</div>
 
+					<div class="form-group col-md-3">
+						<label class="form-label">Competência</label>
+						<input class="form-control" type="date" value="2021-12-31">
+					</div>
+					<div class="form-group col-md-3">
+						<label class="form-label">Vencimento</label>
+						<input class="form-control" type="date" value="2021-12-31">
+					</div>
+					<div class="form-group col-md-3">
+						<label class="form-label">Previsão</label>
+						<input class="form-control" type="date" value="2021-12-31">
+					</div>
+
+
+					<div class="form-group col-md-3 d-flex align-items-end pb-2">
+
+						<div class=" form-check form-switch">
+							<label class="form-check-label w-100" for="recebimento">Pagar</label>
+							<input type="checkbox" class="form-check-input" id="recebimento">
+						</div>
+					</div>
+
+					<div class="col-12">
+
+						<div id="recebimento-content">
+							<div class="row bg-light p-3">
+								<div class="form-group col-md-4">
+									<label class="form-label">Data</label>
+									<input class="form-control" type="date" value="2021-12-31">
+								</div>
+
+								<div class="col-md-4">
+									<div class="input-group">
+										<label class="form-label w-100">Valor pago</label>
+										<span class="input-group-text">$</span>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+
+								<div class="row">
+									<div class="col-md-4">
+										<div class="input-group">
+											<label class="form-label w-100">Desconto</label>
+											<span class="input-group-text">$</span>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="input-group">
+											<label class="form-label w-100">Juros</label>
+											<span class="input-group-text">$</span>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="input-group">
+											<label class="form-label w-100">Multa</label>
+											<span class="input-group-text">$</span>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+
+						</div>
+
+
+					</div>
 
 					<div class="form-group col-md-6">
 						<label class="form-label" for="categoria">Conta / Cartão</label>
@@ -222,106 +298,45 @@
 
 
 
-					<div class="form-group col-md-3">
-						<label class="form-label">Competência</label>
-						<input class="form-control" type="date" value="2021-12-31">
-					</div>
-					<div class="form-group col-md-3">
-						<label class="form-label">Vencimento</label>
-						<input class="form-control" type="date" value="2021-12-31">
-					</div>
-					<div class="form-group col-md-3">
-						<label class="form-label">Previsão</label>
-						<input class="form-control" type="date" value="2021-12-31">
-					</div>
-
-
-					<div class="form-group col-md-3">
-						<label class="form-label w-100">Pagamento</label>
-						<span class="badge fs-5 bg-light-warning mt-2">Pendente</span>
-					</div>
-
-
-
-					<div class="col-12">
-						<div class="form-check form-switch">
-							<input type="checkbox" class="form-check-input" id="recebimento">
-							<label class="form-check-label" for="recebimento">Lançar pagamento</label>
-						</div>
-						<div id="recebimento-content">
-							<div class="row">
-								<div class="form-group col-md-4">
-									<label class="form-label">Data</label>
-									<input class="form-control" type="date" value="2021-12-31">
-								</div>
-
-								<div class="col-md-4">
-									<div class="input-group">
-										<label class="form-label w-100">Valor pago</label>
-										<span class="input-group-text">$</span>
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-
-
-
-							</div>
-
-							<div class="row">
-								<div class="col-md-4">
-									<div class="input-group">
-										<label class="form-label w-100">Desconto</label>
-										<span class="input-group-text">$</span>
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="input-group">
-										<label class="form-label w-100">Juros</label>
-										<span class="input-group-text">$</span>
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="input-group">
-										<label class="form-label w-100">Multa</label>
-										<span class="input-group-text">$</span>
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="form-check form-switch mt-3">
+					<div class="bg-light p-3">
+						<div class="form-check form-switch ms-2">
 							<input type="checkbox" class="form-check-input" id="lancamento">
 							<label class="form-check-label" for="lancamento">Repetir lançamento</label>
 						</div>
 						<div id="lancamento-content">
 							<div class="row px-3 py-2 align-items-center">
 								<div class="col-4">
-									<div class="form-check form-switch">
+									<div class="form-check">
 										<input type="radio" class="form-check-input" name="pay" id="recorrente">
-										<label class="form-check-label" for="recorrente">Recorrente mensal</label>
-									</div>
-
-								</div>
-								<div class="col row" id="recorrente-content">
-
-
-									<div class="form-group col m-0">
-										<select id="categoria" class="form-select">
-											<option selected="">Selecione o dia do mês</option>
-											<option>1</option>
-										</select>
+										<label class="form-check-label" for="recorrente">Recorrente</label>
 									</div>
 
 								</div>
 
 							</div>
+							<div class="row px-3" id="recorrente-content">
+
+								<div class="col-md-2 d-flex align-items-center">
+									<label>Fixo à cada</label>
+								</div>
+
+								<div class=" form-group col-md-3 m-0">
+									<select id="categoria" class="form-select">
+										<option selected="">Dia</option>
+										<option>1</option>
+									</select>
+								</div>
+
+								<div class="form-group col-md-3 m-0">
+									<select id="categoria" class="form-select">
+										<option selected="">Mês</option>
+										<option>1</option>
+									</select>
+								</div>
+
+							</div>
 							<div class="row" style="padding:0 30px;">
-								<div class="form-check form-switch mt-3">
+								<div class="form-check  mt-3">
 									<input type="radio" class="form-check-input" name="pay" id="parcelado">
 									<label class="form-check-label" for="parcelado">Parcelado</label>
 								</div>
@@ -516,7 +531,36 @@
 
 							</div>
 						</div>
+
 					</div>
+
+					<div class="mt-3">
+						<label class="form-label w-100 mb-2" for="">Observações</label>
+						<textarea class="form-control" name="" id="" cols="30" rows="3"></textarea>
+
+						<div class="input-group my-3">
+							<label class="input-group-text" for="inputGroupFile01">Anexo</label>
+							<input type="file" class="form-control" id="inputGroupFile01">
+						</div>
+
+						<div class="p-2">
+							<div class="d-flex align-items-center">
+								<span class="me-2">Documento1.pdf</span>
+								<div>
+									<i class="fa-solid fa-trash"></i>
+									<i class="fa-solid fa-share"></i>
+								</div>
+							</div>
+							<div class="mt-3 d-flex align-items-center">
+								<span class="me-2">Documento2.pdf</span>
+								<div>
+									<i class="fa-solid fa-trash"></i>
+									<i class="fa-solid fa-share"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<div class="col-12 d-flex justify-content-end">
 						<button class="btn btn-primary mt-4">Adicionar</button>
 					</div>
