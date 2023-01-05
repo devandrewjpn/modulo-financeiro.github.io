@@ -1,5 +1,6 @@
 import showSwitch from "./switch-show.js";
-import filter from "./filter.js";
+import astaton from './month.js';
 
 showSwitch();
-filter();
+astaton();
+

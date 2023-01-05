@@ -72,11 +72,11 @@
                                     <polyline points="9 18 15 12 9 6"></polyline>
                                 </svg></span></a>
                         <ul class="pc-submenu"
-							style="display: block; box-sizing: border-box; transition-property: height, margin, padding; transition-duration: 200ms; height: 0px; overflow: hidden; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
-							<li class="pc-item"><a class="pc-link" href="index.html">Lançamentos</a></li>
-							<li class="pc-item"><a class="pc-link" href="categoria.html">Categorias</a></li>
-							<li class="pc-item"><a class="pc-link" href="categoria.html">Centro de Custos</a></li>
-						</ul>
+                            style="display: block; box-sizing: border-box; transition-property: height, margin, padding; transition-duration: 200ms; height: 0px; overflow: hidden; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                            <li class="pc-item"><a class="pc-link" href="index.html">Lançamentos</a></li>
+                            <li class="pc-item"><a class="pc-link" href="categoria.html">Categorias</a></li>
+                            <li class="pc-item"><a class="pc-link" href="categoria.html">Centro de Custos</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -139,15 +139,12 @@
                         <input class="form-control" type="text" value="">
                     </div>
                 </div>
-                <div class="form-check form-switch my-3">
-                    <input type="checkbox" class="form-check-input input-primary" id="possuiSub">
-                    <label class="form-check-label" for="possuiSub">Possui subcategoria?</label>
-                </div>
-                <div id="possuiSub-content">
-                    <div class="input-group px-3">
-                        <label class="form-label w-100">Nome subcategoria:</label>
-                        <input class="form-control" type="text" value="">
-                    </div>
+                <div class="mt-2">
+                    <label for="">Selecione a categoria pai se houver</label>
+                    <select id="" class="mt-2 mb-3 form-select">
+                        <option selected="">Não</option>
+                        <option>1</option>
+                    </select>
                 </div>
                 <strong>Exibição:</strong>
                 <div class="form-check my-2">
@@ -189,62 +186,95 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="categoria-tile">
-                        <div class="card-header d-flex align-items-center justify-content-between">
-                            <a class="" data-bs-toggle="collapse" href="#collapsecategoria" role="button"
-                                aria-expanded="true" aria-controls="collapsecategoria">
-                                categoria teste</a>
-                            <div>
-                                <button class="btn btn-info btn-sm" type="button">Editar</button>
-                                <button class="btn btn-danger btn-sm" type="button">Excluir</button>
-                            </div>
-                        </div>
-                        <div class="collapse" id="collapsecategoria">
-                            <div class="ps-5">
-                                <div class="p-4 d-flex align-items-center justify-content-between">
-                                    <a class="" data-bs-toggle="collapse" href="#subcategoria" role="button"
-                                        aria-expanded="true" aria-controls="subcategoria">subcategoria teste</a>
-                                </div>
-                                <div class="collapse" id="subcategoria">
-                                    <div class="ps-5 pb-3">
-                                        sub subcategoria
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="table-responsive py-5 mt-4">
+                <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
+                    <div class="dataTable-container">
+                        <table class="table dataTable-table" id="pc-dt-simple">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Status</a></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="d-flex align-items-center"><svg class="me-2"
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg> NomeCategoria</td>
+                                    <td><span class="badge bg-success">Ativo</span></td>
+                                    <td>
+                                        <a href=""><i class="text-danger fa-solid fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-5 d-flex align-items-center"><svg class="me-2"
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+                                        </svg> SubCategoria</td>
+                                    <td><span class="badge bg-success">Ativo</span></td>
+                                    <td>
+                                        <a href=""><i class="text-danger fa-solid fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-5 d-flex align-items-center"><svg class="me-2"
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+                                        </svg> SubCategoria</td>
+                                    <td><span class="badge bg-danger">Inativo</span></td>
+                                    <td>
+                                        <a href=""><i class="text-danger fa-solid fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"><svg class="me-2"
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg> NomeCategoria</td>
+                                    <td><span class="badge bg-danger">Inativo</span></td>
+                                    <td>
+                                        <a href=""><i class="text-danger fa-solid fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
 
-                    <div class="categoria-tile">
-                        <div class="card-header d-flex align-items-center justify-content-between">
-                            <a class="" data-bs-toggle="collapse" href="#collapsecategoria2" role="button"
-                                aria-expanded="true" aria-controls="collapsecategoria2">categoria teste</a>
-                            <div>
-                                <button class="btn btn-info btn-sm" type="button">Editar</button>
-                                <button class="btn btn-danger btn-sm" type="button">Excluir</button>
-                            </div>
-                        </div>
-                        <div class="collapse" id="collapsecategoria2">
-                            <div class="ps-5">
-                                <div class="p-4 d-flex align-items-center justify-content-between">
-                                    <a class="" data-bs-toggle="collapse" href="#subcategoria2" role="button"
-                                        aria-expanded="true" aria-controls="subcategoria2">subcategoria2 teste</a>
-                                </div>
-                                <div class="collapse" id="subcategoria2">
-                                    <div class="ps-5 pb-3">
-                                        sub subcategoria2
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </table>
+                        <button data-bs-toggle="ocult" class="meucu btn btn-info">Ocultar desabiliados</button>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
+
+    <script>
+        const disabledButton = document.querySelector('[data-bs-toggle="ocult"]');
+
+        disabledButton.addEventListener('click', function () {
+
+            disabledButton.classList.toggle('ocult');
+
+            if (disabledButton.classList.contains('ocult')) {
+                disabledButton.innerText = 'Desocultar desabilitados';
+                disabledButton.classList.remove('btn-info');
+                disabledButton.classList.add('btn-secondary');
+            } else {
+                disabledButton.innerText = 'Ocultar desabilitados';
+                disabledButton.classList.add('btn-info');
+                disabledButton.classList.remove('btn-secondary');
+            }
+        })
+
+    </script>
 
     <script src="assets/js/plugins/popper.min.js"></script>
     <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>

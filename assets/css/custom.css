@@ -12,6 +12,18 @@
     border: none;
 }
 
+.month {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.month-active {
+    background-color: #7267EF;
+    color: white;
+}
+
 .poin {
     cursor: pointer;
 }

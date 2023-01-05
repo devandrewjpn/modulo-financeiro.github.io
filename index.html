@@ -595,12 +595,54 @@
 
 			<div class="row justify-content-end mt-4">
 
+				<div class="row align-items-center">
+					<div class="col-md-2 d-flex align-items-center">
+						<span data-astaton="prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+								fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+								<path
+									d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+							</svg></span>
+						<h6 class="fs-5 mx-3 my-0" data-astaton="year">2023</h6>
+						<span data-astaton="next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+								fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+								<path
+									d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+							</svg></span>
+					</div>
 
-				<div class="col-md-6 d-flex align-items-center  justify-content-end">
-					<a class="btn btn-outline-secondary btn-sm" href="">Importar</a>
-					<a class="btn btn-outline-secondary btn-sm mx-2" href="">Exportar</a>
-					<a class="btn btn-outline-secondary btn-sm" href="">Imprimir</a>
+					<div class="col-md-7 d-flex align-items-center">
+						<span class="pe-3 m-prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+								fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+								<path
+									d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+							</svg></span>
+						<span class="month month-active">Jan</span>
+						<span class="month">Fev</span>
+						<span class="month">Mar</span>
+						<span class="month">Abril</span>
+						<span class="month">Mai</span>
+						<span class="month">Jun</span>
+						<span class="month">Jul</span>
+						<span class="month">Agos</span>
+						<span class="month">Set</span>
+						<span class="month">Out</span>
+						<span class="month">Nov</span>
+						<span class="month">Dez</span>
+						<span class="ps-3 m-next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+								fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+								<path
+									d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+							</svg></span>
+					</div>
+
+					<div class="col-md-3 d-flex align-items-center  justify-content-end">
+						<a class="btn btn-outline-secondary btn-sm" href="">Importar</a>
+						<a class="btn btn-outline-secondary btn-sm mx-2" href="">Exportar</a>
+						<a class="btn btn-outline-secondary btn-sm" href="">Imprimir</a>
+					</div>
 				</div>
+
+
 
 
 				<div class="col-md-9">
@@ -611,8 +653,9 @@
 									<th>Data</th>
 									<th>Descrição</th>
 									<th>Categoria</th>
-									<th>Valor</th>
+									<th class="text-end">Valor</th>
 									<th>Situação</th>
+									<th></th>
 									<th></th>
 								</tr>
 							</thead>
@@ -626,23 +669,15 @@
 											adipisicing elit. At ullam nat!</div>
 									</td>
 									<td>Categoria</td>
-									<td class="text-danger"><strong>- R$99,90</strong></td>
+									<td class="text-danger text-end"><strong>- R$99,90</strong></td>
 									<td><span class="poin badge bg-success" data-bs-toggle="dropdown"
 											aria-haspopup="true" aria-expanded="false">PAGO</span>
-										<div class="dropdown-menu p-3">
-											<form action="">
-												<strong>Informar pagamento</strong>
-												<select id="" class=" mt-3 form-select">
-													<option selected="">Conta/Cartão</option>
-													<option>1</option>
-												</select>
-												<label class="form-label mt-3 w-100">Data recebimento</label>
-												<input class="form-control mb-2" type="date" name="" id="">
-												<button class="btn btn-success">Marcar como recebido</button>
-											</form>
-										</div>
 									</td>
-									<!-- (vai abrir dropdown, titulo informar pagamento, campo conta/cartao(select) e data recebimento e botao marcar como recebido) -->
+									<td>
+										<img data-bs-toggle="tooltip" data-bs-placement="top"
+											title="Pagamento pelo Santander" width="20px"
+											src="assets/images/santander.svg" alt="">
+									</td>
 									<td><span data-bs-toggle="tooltip" data-bs-placement="top"
 											title="Esté é um lançamento recorrente"><i
 												class="fa-solid fa-repeat"></i></span>
@@ -665,9 +700,43 @@
 											adipisicing elit. At ullam nat!</div>
 									</td>
 									<td>Categoria</td>
-									<td class="text-primary"><b>R$99,90</b></td>
-									<td><span class="badge bg-warning">PENDENTE</span></td>
-									<td><button type="button" class="btn  btn-primary btn-sm">Detalhes</button></td>
+									<td class="text-danger text-end"><strong>- R$99,90</strong></td>
+									<td><span class="poin badge bg-danger" data-bs-toggle="dropdown"
+											aria-haspopup="true" aria-expanded="false">VENCIDO</span>
+										<div class="dropdown-menu p-3">
+											<form action="">
+												<strong>Informar pagamento</strong>
+												<select id="" class=" mt-3 form-select">
+													<option selected="">Conta/Cartão</option>
+													<option>1</option>
+												</select>
+												<label class="form-label mt-3 w-100">Data recebimento</label>
+												<input class="form-control mb-2" type="date" name="" id="">
+												<label class="form-label mt-2 w-100">Juros %</label>
+												<input class="form-control mb-2" type="text" name="" id="">
+												<label class="form-label mt-2 w-100">Multa</label>
+												<input class="form-control mb-2" type="text" name="" id="">
+												<button class="btn btn-success">Marcar como recebido</button>
+											</form>
+										</div>
+									</td>
+									<td>
+										<img data-bs-toggle="tooltip" data-bs-placement="top"
+											title="Pagamento pelo Santander" width="20px"
+											src="assets/images/santander.svg" alt="">
+									</td>
+									<td><span data-bs-toggle="tooltip" data-bs-placement="top"
+											title="Esté é um lançamento recorrente"><i
+												class="fa-solid fa-repeat"></i></span>
+										<a class="btn  btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
+											aria-haspopup="true" aria-expanded="false"></a>
+										<div class="p-4 dropdown-menu">
+											<a href="">Recebimento parcial</a><br>
+											<a href="">Duplicar</a><br>
+											<a href="">Editar</a><br>
+											<a href="">Excluir</a><br>
+										</div>
+									</td>
 								</tr>
 								<tr>
 									<td>29/12/2022</td>
@@ -678,22 +747,40 @@
 											adipisicing elit. At ullam nat!</div>
 									</td>
 									<td>Categoria</td>
-									<td class="text-danger"><strong>- R$99,90</strong></td>
-									<td><span class="badge bg-danger">VENCIDO</span></td>
-									<td><button type="button" class="btn  btn-primary btn-sm">Detalhes</button></td>
-								</tr>
-								<tr>
-									<td>29/12/2022</td>
-									<td>
-										<div style="white-space: nowrap;width: 200px;
-										overflow: hidden;
-										text-overflow: ellipsis;">Lorem ipsum dolor sit, amet consectetur
-											adipisicing elit. At ullam nat!</div>
+									<td class="text-primary text-end"><strong>R$99,90</strong></td>
+									<td><span class="poin badge bg-warning" data-bs-toggle="dropdown"
+											aria-haspopup="true" aria-expanded="false">PENDENTE</span>
+										<div class="dropdown-menu p-3">
+											<form action="">
+												<strong>Informar pagamento</strong>
+												<select id="" class=" mt-3 form-select">
+													<option selected="">Conta/Cartão</option>
+													<option>1</option>
+												</select>
+												<label class="form-label mt-3 w-100">Data recebimento</label>
+												<input class="form-control mb-2" type="date" name="" id="">
+												<label class="form-label mt-2 w-100">Desconto</label>
+												<input class="form-control mb-2" type="text" name="" id="">
+												<button class="btn btn-success">Marcar como recebido</button>
+											</form>
+										</div>
 									</td>
-									<td>Categoria</td>
-									<td class="text-primary"><strong>R$99,90</strong></td>
-									<td><span class="badge bg-primary">PREVISTO</span></td>
-									<td><button type="button" class="btn  btn-primary btn-sm">Detalhes</button></td>
+									<td>
+										<i data-bs-toggle="tooltip" data-bs-placement="top"
+											title="Pago com cartão de crédito" class="fa-solid fa-credit-card"></i>
+									</td>
+									<td><span data-bs-toggle="tooltip" data-bs-placement="top"
+											title="Esté é um lançamento recorrente"><i
+												class="fa-solid fa-repeat"></i></span>
+										<a class="btn  btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
+											aria-haspopup="true" aria-expanded="false"></a>
+										<div class="p-4 dropdown-menu">
+											<a href="">Recebimento parcial</a><br>
+											<a href="">Duplicar</a><br>
+											<a href="">Editar</a><br>
+											<a href="">Excluir</a><br>
+										</div>
+									</td>
 								</tr>
 							</tbody>
 						</table>
@@ -702,11 +789,11 @@
 
 				<div class="col-md-3 py-4">
 
+					<button class="btn btn-primary w-100" data-bs-toggle="collapse" href="#filtro">Filtro <i
+							class="ms-2 fa-solid fa-filter"></i></button>
 
-					<div style="border:1px solid #f1f1f1;">
-						<div style="background-color:#f1f1f1" class="p-2">
-							<b>Filtros</b>
-						</div>
+
+					<div class="collapse" id="filtro" style="border:1px solid #f1f1f1;">
 
 
 						<div class="row p-2">
@@ -831,6 +918,7 @@
 			</div>
 		</div>
 	</div>
+	<script type="module" src="assets/js/custom/main.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.3.js"
 		integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
@@ -841,7 +929,6 @@
 	<script src="assets/js/pcoded.js"></script>
 	<script src="assets/js/plugins/choices.min.js"></script>
 
-	<script type="module" src="assets/js/custom/main.js"></script>
 
 
 
