@@ -11,18 +11,21 @@ export default function astaton() {
 
     let y = data.getFullYear();
 
-    prev.addEventListener('click', () => {
+    const subYear = () => {
         year.innerText = y - 1;
         y--;
+    }
 
-    })
-
-    next.addEventListener('click', () => {
+    const addYear = () => {
         year.innerText = y + 1;
         y++;
-    })
+    }
 
-    var actualMonth = data.getMonth;
+    prev.addEventListener('click', subYear)
+
+    next.addEventListener('click', addYear)
+
+    var actualMonth = data.getMonth();
 
     function changeMonth() {
         const months = document.querySelectorAll('.month');
@@ -39,6 +42,11 @@ export default function astaton() {
         })
         prev_m.addEventListener('click', () => {
             actualMonth = actualMonth - 1;
+            if (actualMonth < 0) {
+                actualMonth = 11;
+
+                subYear()
+            }
             months.forEach((m) => {
                 m.classList.remove('month-active');
                 if (m.getAttribute('data-astaton') == actualMonth) {
@@ -50,6 +58,11 @@ export default function astaton() {
         })
         next_m.addEventListener('click', () => {
             actualMonth = actualMonth + 1;
+            if (actualMonth > 11) {
+                actualMonth = 0;
+
+                addYear()
+            }
             months.forEach((m) => {
                 m.classList.remove('month-active');
                 if (m.getAttribute('data-astaton') == actualMonth) {
