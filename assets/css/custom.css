@@ -19,6 +19,10 @@
     margin-right: 5px;
 }
 
+.month:hover {
+    cursor: pointer;
+}
+
 .month-active {
     background-color: #7267EF;
     color: white;

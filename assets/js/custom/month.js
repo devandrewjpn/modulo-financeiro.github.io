@@ -66,8 +66,8 @@ export default function astaton() {
             months.forEach((m) => {
                 m.classList.remove('month-active');
                 if (m.getAttribute('data-astaton') == actualMonth) {
-                    var cu = document.querySelector(`[data-astaton="${actualMonth}"]`);
-                    cu.classList.add('month-active');
+                    var da = document.querySelector(`[data-astaton="${actualMonth}"]`);
+                    da.classList.add('month-active');
                 }
             })
 
