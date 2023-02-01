@@ -25,6 +25,21 @@
     <link rel="stylesheet" href="assets/css/customizer.css">
     <link rel="stylesheet" href="assets/css/custom.css">
 
+    <style>
+        .nav-link {
+            border-radius: 0 !important;
+            color: white !important;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #7267ef !important;
+        }
+
+        .nav-tabs .nav-link {
+            border: none !important;
+        }
+    </style>
+
 </head>
 
 
@@ -137,300 +152,325 @@
 
 
     <div class="pc-container">
-        <div class="pcoded-content bg-light">
+        <div class="pcoded-content bg-white pb-5">
 
             <div class="page-header">
                 <div class="page-block">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-between align-items-center">
                             <div class="page-header-title">
-                                <h5 class="m-b-10">Eventos</h5>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <button class="me-2 btn btn-primary d-flex align-items-center"
-                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-                                    aria-controls="offcanvasBottom"><i class="fa-solid fs-6 fa-plus me-2"></i>Cadastrar
-                                    evento</button>
-                                <a href="abertura_evento.html"
-                                    class="btn btn-success text-white d-flex align-items-center"><i
-                                        class="fa-solid fs-6 fa-phone me-2"></i>Abertura de evento</a>
+                                <h5 class="m-b-10">Detalhes do evento</h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div style="height: auto;" class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
-                aria-labelledby="offcanvasBottomLabel">
-                <div class="offcanvas-header bg-primary">
-                    <h5 class="text-white text-uppercase offcanvas-title" id="offcanvasBottomLabel">cadastrar tipo de
-                        evento</h5>
+            <div class=" mt-5 d-flex justify-content-between align-items-center ">
+                <div>
+                    <span>HCS9037 - JOÃO PAULO DA SILVA</span>
+                    <p><b>Iniciado</b>: 20/12/2023</p>
                 </div>
-                <div class="offcanvas-body">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div>
-                                    <label class="form-label" for="">Tipo do evento</label>
-                                    <input class="form-control" type="text" placeholder="Título">
-                                </div>
-                                <div class="mt-3">
-                                    <label class="form-label" for="">Descrição</label>
-                                    <textarea class="form-control" name="" id="" cols="30" rows="3"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-4">
-                                <div class="form-check">
-                                    <input id="datahora" class="form-check-input input-light-primary" type="checkbox"
-                                        checked="">
-                                    <label for="datahora" class="form-check-label">Solicitar data e
-                                        hora</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="consultor" class="form-check-input input-light-primary" type="checkbox">
-                                    <label for="consultor" class="form-check-label">Dados do consultor</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="envolvidos" class="form-check-input input-light-primary" type="checkbox">
-                                    <label for="envolvidos" class="form-check-label">Envolvidos</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="documentos" class="form-check-input input-light-primary" type="checkbox">
-                                    <label for="documentos" class="form-check-label">Documentos</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="fotos" class="form-check-input input-light-primary" type="checkbox">
-                                    <label for="fotos" class="form-check-label">Fotos</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="testemunhas" class="form-check-input input-light-primary"
-                                        type="checkbox">
-                                    <label for="testemunhas" class="form-check-label">Houve testemunhas</label>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
-                <div class="offcanvas-header bg-primary">
-                    <h5 class="text-white text-uppercase offcanvas-title" id="offcanvasBottomLabel">configurar campos
-                        adicionais</h5>
-                </div>
-                <div class="offcanvas-body">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label class="form-label" for="">Nome do campo</label>
-                                <input class="form-control" type="text" placeholder="Nome do campo">
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label" for="">Tipo</label>
-                                <input class="form-control" type="text" placeholder="Texto">
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label" for="">Obrigatório</label>
-                                <input class="form-control" type="text" placeholder="Tipo">
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label" for="">Tamanho</label>
-                                <select class="form-control" name="" id="">
-                                    <option value="" selected>6</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-
-                    <button class="mt-3 btn btn-light-primary btn-sm">
-                        Cadastrar
-                    </button>
-
-                    <button class="mt-3 btn btn-light-danger btn-sm" data-bs-dismiss="offcanvas">
-                        Cancelar
-                    </button>
-
+                <div class="d-flex">
+                    <button class="btn btn-outline-secondary">Adicionar lembrete</button>
+                    <button class="btn btn-warning mx-2">Orçamentação</button>
+                    <button class="btn btn-primary"><img width="20px" src="fluxograma-icon.svg" alt=""></button>
                 </div>
             </div>
 
-
-
-            <div class="row mt-5 pt-3">
-
-                <div class="col-md-6 flex-fill col-xl-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="mb-3 text-primary">Em andamento</h6>
-                            <div class="row d-flex align-items-center">
-                                <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">2 Eventos</h3>
+            <div class="border">
+                <ul class="bg-primary nav nav-tabs mb-3" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" id="home-tab" data-bs-toggle="tab" href="bc_tabs.html#home"
+                            role="tab" aria-controls="home" aria-selected="true">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" id="profile-tab" data-bs-toggle="tab"
+                            href="bc_tabs.html#profile" role="tab" aria-controls="profile" aria-selected="false">Dados
+                            do evento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-uppercase" id="contact-tab" data-bs-toggle="tab"
+                            href="bc_tabs.html#contact" role="tab" aria-controls="contact"
+                            aria-selected="false">Documentos e fotos</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane p-3 fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <img src="placeholder.png" alt="">
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row px-4 py-2">
+                            <div class="col-md-2">
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Categoria:<span>
+                                    <p class="h4 text-secondary">Carros</p>
                                 </div>
-                                <div class="col-3 text-end">
-                                    <p class="">20%</p>
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Placa:<span>
+                                    <p class="h4 text-secondary">HCS-9037</p>
                                 </div>
                             </div>
-                            <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-theme" role="progressbar" style="width: 20%;"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="col-md-3">
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Marca/Modelo:<span>
+                                    <p class="h4 text-secondary">FIAT / Uno mile FIRE Flex 1.0</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Associado:<span>
+                                    <p class="h4 text-secondary">João Paulo da Silva</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Tipo de evento:<span>
+                                    <p class="h4 text-secondary">Colisão</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Data da abertura:<span>
+                                    <p class="h4 text-secondary">20/12/2023</p>
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-start justify-content-end">
+                                <button class="btn btn-outline-primary d-flex align-items-center"><i class="me-2 fa-regular fa-file-pdf"></i> Exportar documento do evento</button>
+                            </div>
+                        </div>
+                        <div class="bg-primary px-4 text-white p-3 text-uppercase">dados do evento</div>
+                        <form class="p-4" action="">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="row my-3">
+                                        <div class="col-md-2">
+                                            <label for="">Data</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label for="">Hora</label>
+                                            <input type="datetime" class="form-control">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <label for="">Localização</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="col-12 my-3">
+                                            <label for="">Descrição do ocorrido</label>
+                                            <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="p-3 border rounded">
+                                        <h6>Informações do evento</h6>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">
+                                                <div class="form-check">
+                                                    <input id="um" class="form-check-input input-light-primary" type="checkbox">
+                                                    <label for="um" class="form-check-label">Assistência 24h foi acionada</label>
+                                                </div>
+                                            </li>
+                                            <li class="mb-2">
+                                                <div class="form-check">
+                                                    <input id="dois" class="form-check-input input-light-primary" checked
+                                                        type="checkbox">
+                                                    <label for="dois" class="form-check-label">Houve outros envolvidos</label>
+                                                </div>
+                                            </li>
+                                            <li class="mb-2">
+                                                <div class="form-check">
+                                                    <input id="tres" class="form-check-input input-light-primary" checked
+                                                        type="checkbox">
+                                                    <label for="tres" class="form-check-label">Houve testemunhas</label>
+                                                </div>
+                                            </li>
+                                            <li class="mb-2">
+                                                <div class="form-check">
+                                                    <input id="tres" class="form-check-input input-light-primary" checked
+                                                        type="checkbox">
+                                                    <label for="tres" class="form-check-label">Houve vítimas</label>
+                                                </div>
+                                            </li>
+                                            <li class="mb-2">
+                                                <div class="form-check">
+                                                    <input id="tres" class="form-check-input input-light-primary" checked
+                                                        type="checkbox">
+                                                    <label for="tres" class="form-check-label">Realizado boletim online</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <button class="btn btn-sm btn-primary">Visualizar boletim de ocorrência</button>
+                                            <button class="btn btn-sm btn-primary">Ouvir relato</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="bg-primary px-5 text-white p-3 text-uppercase">envolvidos</div>
+
+                        <div class="px-5 py-3">
+
+                            <form action="" class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="">Nome completo</label>
+                                    <input class="form-control" type="text" placeholder="Nome">
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label for="">CPF</label>
+                                    <input class="form-control" type="number" placeholder="000.000.000-00">
+                                </div>
+
+                                <div class="col-md-2 mb-3">
+                                    <label for="">Placa</label>
+                                    <input class="form-control" type="text" placeholder="ABC 1234">
+                                </div>
+
+                                <div class="col-md-2 mb-3">
+                                    <label for="">Telefone</label>
+                                    <input class="form-control" type="number" placeholder="(00)00000-00000">
+                                </div>
+
+                                
+
+                                <div class="col-md-3 mb-3">
+                                    <label for="">Anexo CNH do envolvido</label>
+                                    <input class="form-control" type="file">
+                                </div>
+
+                                <div class="col-md-3 mb-3">
+                                    <label for="">Doc. veículo do envolvido</label>
+                                    <input class="form-control" type="file">
+                                </div>
+                            </form>
+
+                            <button class="btn btn-info my-3">Adicionar envolvido</button>
+
+                            <h4>Testemunhas</h4>
+                            <form action="" class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="">Nome completo</label>
+                                    <input class="form-control" type="text" placeholder="Nome">
+                                </div>
+
+                                <div class="col-md-3 mb-3">
+                                    <label for="">Telefone</label>
+                                    <input class="form-control" type="number" placeholder="(00)00000-0000">
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label for="">CPF</label>
+                                    <input class="form-control" type="number" placeholder="000.000.000-00">
+                                </div>
+
+                            </form>
+                            <button class="my-3 btn btn-info">Adicionar testemunhas</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="row px-4 py-2">
+                            <div class="col-md-2">
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Categoria:<span>
+                                    <p class="h4 text-secondary">Carros</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Placa:<span>
+                                    <p class="h4 text-secondary">HCS-9037</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Marca/Modelo:<span>
+                                    <p class="h4 text-secondary">FIAT / Uno mile FIRE Flex 1.0</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Associado:<span>
+                                    <p class="h4 text-secondary">João Paulo da Silva</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Tipo de evento:<span>
+                                    <p class="h4 text-secondary">Colisão</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Data da abertura:<span>
+                                    <p class="h4 text-secondary">20/12/2023</p>
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-start justify-content-end">
+                                <button class="btn btn-outline-primary d-flex align-items-center me-1"><i class="me-2 fa-regular fa-file-pdf"></i> Evento</button>
+                                <button class="btn btn-outline-primary d-flex align-items-center"><i class="me-2 fa-regular fa-file-pdf"></i> Doc e fotos</button>
+                            </div>
+                        </div>
+                        <div class="bg-primary px-5 text-white p-3 text-uppercase">documentos</div>
+
+                        <div class="row px-5 py-3">
+                            <h4>Documentos obrigatórios</h4>
+
+                            <div class="col-md-4">
+
+                                <div
+                                    style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png);width: 100%;height: 300px;background-size: cover;background-repeat: no-repeat;">
+                                    <label class="bg-white p-3 border" for="">Boletim de ocorrência</label>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <input type="file" class="form-control">
+                                    <button class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div
+                                    style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png);width: 100%;height: 300px;background-size: cover;background-repeat: no-repeat;">
+                                    <label class="bg-white p-3 border" for="">CNH do condutor</label>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <input type="file" class="form-control">
+                                    <button class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div
+                                    style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png);width: 100%;height: 300px;background-size: cover;background-repeat: no-repeat;">
+                                    <label class="bg-white p-3 border" for="">Documentos extras</label>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <input type="file" class="form-control">
+                                    <button class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="bg-primary px-5 text-white p-3 text-uppercase">fotos</div>
+                        <div class="row p-5">
+                            <div class="col-md-3">
+                                <div class="d-flex justify-content-end align-items-end"
+                                    style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png);width: 100%;height: 300px;background-size: cover;background-repeat: no-repeat;">
+                                    <label class="bg-white w-100 p-3 border" for="">Titulo</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex justify-content-end align-items-end"
+                                    style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png);width: 100%;height: 300px;background-size: cover;background-repeat: no-repeat;">
+                                    <label class="bg-white w-100 p-3 border" for="">Titulo</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex justify-content-end align-items-end"
+                                    style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png);width: 100%;height: 300px;background-size: cover;background-repeat: no-repeat;">
+                                    <label class="bg-white w-100 p-3 border" for="">Titulo</label>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center mt-3">
+                                <button class="btn btn-primary">+ Adicionar fotos</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 flex-fill col-xl-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="mb-3 text-danger">Em processo de negativa</h6>
-                            <div class="row d-flex align-items-center">
-                                <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">1 Evento</h3>
-                                </div>
-                                <div class="col-3 text-end">
-                                    <p class="">60%</p>
-                                </div>
-                            </div>
-                            <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 flex-fill col-xl-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="mb-3 text-warning">Pendente</h6>
-                            <div class="row d-flex align-items-center">
-                                <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">1 Evento</h3>
-                                </div>
-                                <div class="col-3 text-end">
-                                    <p class="">90%</p>
-                                </div>
-                            </div>
-                            <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 flex-fill col-xl-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="mb-3 text-success">Concluídos</h6>
-                            <div class="row d-flex align-items-center">
-                                <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">7 Eventos</h3>
-                                </div>
-                                <div class="col-3 text-end">
-                                    <p class="">100%</p>
-                                </div>
-                            </div>
-                            <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 flex-fill col-xl-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="mb-3">Sindicância</h6>
-                            <div class="row d-flex align-items-center">
-                                <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">3 Eventos</h3>
-                                </div>
-                                <div class="col-3 text-end">
-                                    <p class="">78%</p>
-                                </div>
-                            </div>
-                            <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 78%;"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="d-flex align-items-center justify-content-between">
-                    <h3 class="font-bold text-secondary ps-3">Aguardando</h3>
-                    <select class="form-control w-auto pe-5" name="" id="">
-                        <option value="" selected>Todo o período</option>
-                    </select>
-                </div>
-                <div class="table-responsive my-4">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Situação</th>
-                                <th>Placa</th>
-                                <th>Tipo de evento</th>
-                                <th>Origem</th>
-                                <th>Prob. Fraude</th>
-                                <th>Temp. Decorrêcia</th>
-                                <th>Operador</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Aguardando atendimento</td>
-                                <td>
-                                    HES5951
-                                </td>
-                                <td>Roubo / Furto</td>
-                                <td>APP</td>
-                                <td><span class="poin badge bg-warning px-3">44%</span></td>
-                                <td><span class="poin badge bg-success px-3">00:32</span></td>
-                                <td><span class="poin badge bg-primary w-100">João Paulo</span></td>
-                                <td><a href="detalhes_do_evento.html">Detalhes</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="d-flex align-items-center justify-content-between">
-                    <h3 class="font-bold text-secondary ps-3">Em andamento</h3>
-                    <select class="form-control w-auto pe-5" name="" id="">
-                        <option value="" selected>Todo o período</option>
-                    </select>
-                </div>
-                <div class="table-responsive my-4">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Situação</th>
-                                <th>Placa</th>
-                                <th>Tipo de evento</th>
-                                <th>Origem</th>
-                                <th>Temp. Decorrêcia</th>
-                                <th>Operador</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Em processo de negativa</td>
-                                <td>
-                                    HES5951
-                                </td>
-                                <td>Roubo / Furto</td>
-                                <td>APP</td>
-                                <td><span class="poin badge bg-success px-3">00:32</span></td>
-                                <td><span class="poin badge bg-primary w-100">João Paulo</span></td>
-                            </tr>
-                            <tr>
-                                <td>Aguardando</td>
-                                <td>
-                                    HES5951
-                                </td>
-                                <td>Colisão</td>
-                                <td>TELEFONE</td>
-                                <td><span class="poin badge bg-danger px-3">8 dias</span></td>
-                                <td><span class="poin badge bg-primary w-100">João Paulo</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
 
