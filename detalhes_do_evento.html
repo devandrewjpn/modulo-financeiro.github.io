@@ -190,9 +190,34 @@
                             do evento</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-uppercase" id="contact-tab" data-bs-toggle="tab"
+                        <a class="nav-link text-uppercase" id="contact-tab" data-bs-toggle="tab"
                             href="bc_tabs.html#contact" role="tab" aria-controls="contact"
                             aria-selected="false">Documentos e fotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" id="oficina-tab" data-bs-toggle="tab"
+                            href="bc_tabs.html#oficina" role="tab" aria-controls="oficina"
+                            aria-selected="false">Oficina</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" id="orcamentacao-tab" data-bs-toggle="tab"
+                            href="bc_tabs.html#orcamentacao" role="tab" aria-controls="orcamentacao"
+                            aria-selected="false">Orçamentação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" id="financeiro-tab" data-bs-toggle="tab"
+                            href="bc_tabs.html#financeiro" role="tab" aria-controls="financeiro"
+                            aria-selected="false">Financeiro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" id="atendimentos-tab" data-bs-toggle="tab"
+                            href="bc_tabs.html#atendimentos" role="tab" aria-controls="atendimentos"
+                            aria-selected="false">Atendimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-uppercase" id="historico-tab" data-bs-toggle="tab"
+                            href="bc_tabs.html#historico" role="tab" aria-controls="historico"
+                            aria-selected="false">Histórico</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
@@ -366,7 +391,7 @@
                             <button class="my-3 btn btn-info">Adicionar testemunhas</button>
                         </div>
                     </div>
-                    <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                         <div class="row px-4 py-2">
                             <div class="col-md-2">
                                 <div class="d-flex flex-column">
@@ -471,11 +496,720 @@
                             </div>
                         </div>
                     </div>
+                    <div class="tab-pane p-3 fade" id="oficina" role="tabpanel" aria-labelledby="oficina-tab">
+                        <div class="row px-4 py-2">
+                            <div class="col-md-2">
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Categoria:<span>
+                                    <p class="h4 text-secondary">Carros</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Placa:<span>
+                                    <p class="h4 text-secondary">HCS-9037</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Marca/Modelo:<span>
+                                    <p class="h4 text-secondary">FIAT / Uno mile FIRE Flex 1.0</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Associado:<span>
+                                    <p class="h4 text-secondary">João Paulo da Silva</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Tipo de evento:<span>
+                                    <p class="h4 text-secondary">Colisão</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="form-label w-100">Data da abertura:<span>
+                                    <p class="h4 text-secondary">20/12/2023</p>
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-start justify-content-end">
+                                <button class="btn btn-outline-primary d-flex align-items-center"><i class="me-2 fa-regular fa-file-pdf"></i> Exportar documento do evento</button>
+                            </div>
+                        </div>
+                        <div class="bg-primary px-4 text-white p-3 text-uppercase">pesquisar oficina</div>
+                        <div class="my-3">
+                            <form class="row" action="" method="post">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Digite o nome:">
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="text" class="form-control" placeholder="UF:">
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" placeholder="Cidade:">
+                                </div>
+                                <div class="col-md-1">
+                                    <button class="btn btn-primary w-100"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="h4">Resultados</p>
+                            <div class="col-md-3">
+                                <select class="form-control" name="" id="">
+                                    <option value="" selected>Ordenar por</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <div class="border rounded mt-3 d-flex">
+                            <div style="background-image: url(oficina-1.jpg);width: 100%;max-width: 250px;height: 200px;background-repeat: no-repeat;background-size: cover;background-position: center center;"></div>
+                            <div class="p-3 d-flex justify-content-between w-100">
+                                <div class="">
+                                    <h3 class="card-title">INDUSTRY AUTOMOTIVE</h3>
+                                    <p class="card-text mt-2">AUTOMOTIVE INDUSTRY CENTER MASTER LTDA</p>
+                                    <p class="mb-0">Rua Afonto Paulo, 33 - Barro Preto - Belo Horizonte / MG</p>
+                                    <p class="mb-0"><i class="fa-solid fa-phone"></i> (31)3415-5451 / (31)3415-5451  </p>
+                                    <p><i class="fa-brands fa-whatsapp"></i> (31)99444-5451</p>
+                                </div>
+                                <div class="d-flex flex-column justify-content-between">
+                                    <div class="d-flex align-items-end flex-column">
+                                        <div class="d-flex align-items-center">
+                                            <img src="star.jpg" alt="">
+                                            <img src="star.jpg" alt="">
+                                            <img src="star.jpg" alt="">
+                                            <img src="star-grey.jpg" alt="">
+                                        </div>
+                                        <span>3 serviços executados</span>
+                                    </div>
+                                    <button class="coll-butt btn btn-sm btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Detalhes <img width="12px" class="collapse-arr" src="arrow-down.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="bg-primary px-5 text-white p-3 text-uppercase">detalhes da oficina</div>
+                            <div class="row mt-5 pt-3">
+
+                                <div class="col-md-6 flex-fill col-xl-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="mb-3 text-primary">Reparos em andamento</h6>
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-9">
+                                                    <h3 class="f-w-300 d-flex align-items-center ">3 Reparos</h3>
+                                                </div>
+                                                <div class="col-3 text-end">
+                                                    <p class="">50%</p>
+                                                </div>
+                                            </div>
+                                            <div class="progress m-t-20" style="height: 7px;">
+                                                <div class="progress-bar bg-theme" role="progressbar" style="width: 20%;"
+                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 flex-fill col-xl-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="mb-3 text-warning">Em atraso</h6>
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-9">
+                                                    <h3 class="f-w-300 d-flex align-items-center ">1 Reparo</h3>
+                                                </div>
+                                                <div class="col-3 text-end">
+                                                    <p class="">60%</p>
+                                                </div>
+                                            </div>
+                                            <div class="progress m-t-20" style="height: 7px;">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;"
+                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 flex-fill col-xl-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="mb-3 text-secondary">Em negociação</h6>
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-9">
+                                                    <h3 class="f-w-300 d-flex align-items-center ">7 Reparos</h3>
+                                                </div>
+                                                <div class="col-3 text-end">
+                                                    <p class="">100%</p>
+                                                </div>
+                                            </div>
+                                            <div class="progress m-t-20" style="height: 7px;">
+                                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;"
+                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 flex-fill col-xl-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="mb-3 text-success">Concluídos</h6>
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-9">
+                                                    <h3 class="f-w-300 d-flex align-items-center ">3 Reparos</h3>
+                                                </div>
+                                                <div class="col-3 text-end">
+                                                    <p class="">78%</p>
+                                                </div>
+                                            </div>
+                                            <div class="progress m-t-20" style="height: 7px;">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 78%;"
+                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 d-flex justify-content-between w-100">
+                                <div class="">
+                                    <h3 class="card-title">INDUSTRY AUTOMOTIVE</h3>
+                                    <p class="card-text mt-2">AUTOMOTIVE INDUSTRY CENTER MASTER LTDA</p>
+                                    <p class="mb-0">Rua Afonto Paulo, 33 - Barro Preto - Belo Horizonte / MG</p>
+                                    <p class="mb-0"><i class="fa-solid fa-phone"></i> (31)3415-5451 / (31)3415-5451  </p>
+                                    <p><i class="fa-brands fa-whatsapp"></i> (31)99444-5451</p>
+                                </div>
+                                <div class="d-flex flex-column justify-content-between">
+                                    <div class="d-flex align-items-end flex-column">
+                                        <div class="d-flex align-items-center">
+                                            <img src="star.jpg" alt="">
+                                            <img src="star.jpg" alt="">
+                                            <img src="star.jpg" alt="">
+                                            <img src="star-grey.jpg" alt="">
+                                        </div>
+                                        <span class="mb-3">3 serviços executados</span>
+                                        <p class="m-0"><b>75%</b> Entregas no prazo</p>
+                                        <p class="m-0"><b>80%</b> Qualidade do serviço</p>
+                                        <p class="m-0"><b>90%</b> Relacionamento</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-primary px-5 text-white p-3 text-uppercase">últimos atendimentos</div>
+                            <div class="table-responsive my-4">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Situação</th>
+                                            <th>Placa</th>
+                                            <th>Modelo</th>
+                                            <th>Serviço</th>
+                                            <th>Tempo</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="poin badge bg-success px-3">Concluído</span></td>
+                                            <td>
+                                                HES5951
+                                            </td>
+                                            <td>Fiat UNO</td>
+                                            <td>Colisão</td>
+                                            <td><span class="poin badge bg-warning px-3">7 dias</span></td>
+                                            <td><a href="">Detalhes</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="poin badge bg-success px-3">Concluído</span></td>
+                                            <td>
+                                                GDF6547
+                                            </td>
+                                            <td>Fiat Palio Attractive</td>
+                                            <td>Martelinho</td>
+                                            <td><span class="poin badge bg-success px-3">3 dias</span></td>
+                                            <td><a href="">Detalhes</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-primary px-5 text-white p-3 text-uppercase">serviço e estrutura</div>
+                            <div class="row p-4">
+                                <div class="col-md-6">
+                                    <h4>Serviços</h4>
+                                    <p class="mb-1 bg-light p-2 text-uppercase">pintura</p>
+                                    <p class="mb-1 p-2 text-uppercase">martelinho de ouro</p>
+                                    <p class="mb-1 bg-light p-2 text-uppercase">pequenos reparos</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Estrutura</h4>
+                                    <p class="mb-1 bg-light p-2 text-uppercase">cabine de pintura</p>
+                                    <p class="mb-1 p-2 text-uppercase">galpão</p>
+                                    <p class="mb-1 bg-light p-2 text-uppercase">recepção</p>
+                                    <p class="mb-1 p-2 text-uppercase">fachada</p>
+                                </div>
+                            </div>
+                          </div>
+
+                        <div class="border rounded mt-3 d-flex">
+                            <div style="background-image: url(oficina-2.jpg);width: 100%;max-width: 250px;height: 200px;background-repeat: no-repeat;background-size: cover;background-position: center center;"></div>
+                            <div class="p-3 d-flex justify-content-between w-100">
+                                <div class="">
+                                    <h3 class="card-title">NOME FANTASIA</h3>
+                                    <p class="card-text mt-2">RAZÃO SOCIAL</p>
+                                    <p class="mb-0">Rua Afonto Paulo, 33 - Barro Preto - Belo Horizonte / MG</p>
+                                    <p class="mb-0"><i class="fa-solid fa-phone"></i> (31)3415-5451 / (31)3415-5451  </p>
+                                    <p><i class="fa-brands fa-whatsapp"></i> (31)99444-5451</p>
+                                </div>
+                                <div class="d-flex flex-column justify-content-between">
+                                    <div class="d-flex align-items-end flex-column">
+                                        <div class="d-flex align-items-center">
+                                            <img src="star.jpg" alt="">
+                                            <img src="star.jpg" alt="">
+                                            <img src="star.jpg" alt="">
+                                            <img src="star.jpg" alt="">
+                                            <img src="star.jpg" alt="">
+                                            <img src="star-grey.jpg" alt="">
+                                        </div>
+                                        <span>2 serviços executados</span>
+                                    </div>
+                                    <button class="btn btn-sm btn-primary">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane p-3 fade" id="orcamentacao" role="tabpanel" aria-labelledby="orcamentacao-tab">
+                        <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >lista de compras - peças <button class="arrow-collapse-button" data-bs-toggle="collapse" href="#collapsePecas" role="button" aria-expanded="false" aria-controls="collapsePecas"><img class="pecas-arrow" src="arrow-down.svg" alt=""></button></div>
+                        <div class="collapse show" id="collapsePecas">
+                            <div class="card card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td class="w-100"></td>
+                                                <td>Orçamento</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-100">RODA DIANTEIRA DIREITA</td>
+                                                <td><span class="badge bg-light-success">Aprovado</span></td>
+                                                <td><a href="">Detalhes</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-100">PARAFUSOS RODAS</td>
+                                                <td><span class="badge bg-light-danger">Reprovado</span></td>
+                                                <td><a href="">Detalhes</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-100">VIDRO LATERAL DIREITO</td>
+                                                <td><span class="badge bg-light-success">Aprovado</span></td>
+                                                <td><a href="">Detalhes</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button class="btn btn-primary">Adicionar</button>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >mão de obra <button class="arrow-collapse-button" data-bs-toggle="collapse" href="#collapseMaodeObra" role="button" aria-expanded="false" aria-controls="collapseMaodeObra"><img class="pecas-arrow" src="arrow-down.svg" alt=""></button></div>
+                          <div class="collapse show" id="collapseMaodeObra">
+                              <div class="card card-body">
+                                  <div class="table-responsive">
+                                      <table class="table table-striped">
+                                          <tbody>
+                                              <tr>
+                                                  <td class="w-100"></td>
+                                                  <td>Orçamento</td>
+                                                  <td></td>
+                                              </tr>
+                                              <tr>
+                                                  <td class="w-100">PINTURA PORTA</td>
+                                                  <td><span class="badge bg-light-success">Aprovado</span></td>
+                                                  <td><a href="">Detalhes</a></td>
+                                              </tr>
+                                              <tr>
+                                                  <td class="w-100">MAO DE OBRA</td>
+                                                  <td><span class="badge bg-light-danger">Reprovado</span></td>
+                                                  <td><a href="">Detalhes</a></td>
+                                              </tr>
+                                              <tr>
+                                                  <td class="w-100">VIDRO LATERAL DIREITO</td>
+                                                  <td><span class="badge bg-light-success">Aprovado</span></td>
+                                                  <td><a href="">Detalhes</a></td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                      <button class="btn btn-primary">Adicionar</button>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >orçamentos<button class="arrow-collapse-button" data-bs-toggle="collapse" href="#collapseOrcamentos" role="button" aria-expanded="false" aria-controls="collapseOrcamentos"><img class="pecas-arrow" src="arrow-down.svg" alt=""></button></div>
+                            <div class="collapse show" id="collapseOrcamentos">
+                                <div class="table-responsive my-4">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Situação</th>
+                                                <th>Data</th>
+                                                <th>Empresa</th>
+                                                <th>Items</th>
+                                                <th>Valor</th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="poin badge bg-danger px-3">Reprovado</span></td>
+                                                <td>
+                                                    10/05/2022
+                                                </td>
+                                                <td>LM AUTO PEÇAS</td>
+                                                <td>12</td>
+                                                <td>R$705,00</td>
+                                                
+                                                <td><a href=""><i class="fa-solid fa-paperclip"></i></a></td>
+                                                <td><a href="detalhes_do_evento.html">Detalhes</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row justify-content-between">
+                                    <div class="col-md-4">
+                                        <label for="">Link para orçamento para oficina</label>
+                                        <div class="mt-2 input-group input-group-button">
+                                            <input type="text" class="form-control" placeholder="www.bplink.com.br/orcamentacao/217384843" disabled autocomplete="off">
+                                            <button class="btn btn-primary" type="button"><i class="fas fa-copy"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 d-flex justify-content-end align-items-end">
+                                        <button class="btn btn-primary">Novo orçamento</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane p-3 fade" id="financeiro" role="tabpanel" aria-labelledby="financeiro-tab">
+                        <div class="row pt-3">
+
+                            <div class="col-md-6 flex-fill col-xl-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="mb-3 text-primary">Total aprovado</h6>
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-9">
+                                                <h3 class="f-w-300 d-flex align-items-center ">R$2450</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 flex-fill col-xl-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="mb-3 text-success">Pago</h6>
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-9">
+                                                <h3 class="f-w-300 d-flex align-items-center ">R$450</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 flex-fill col-xl-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="mb-3 text-warning">Em atraso</h6>
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-9">
+                                                <h3 class="f-w-300 d-flex align-items-center ">R$1000</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 flex-fill col-xl-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="mb-3 text-secondary">Agendado</h6>
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-9">
+                                                <h3 class="f-w-300 d-flex align-items-center ">R$1000</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 flex-fill col-xl-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="mb-3 text-danger">Faltante</h6>
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-9">
+                                                <h3 class="f-w-300 d-flex align-items-center ">R$2000</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive my-4">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Situação</th>
+                                        <th>Data</th>
+                                        <th>Empresa</th>
+                                        <th>Items</th>
+                                        <th>Valor</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="poin badge bg-success px-3 w-75">Pago</span></td>
+                                        <td>
+                                            10/05/2022
+                                        </td>
+                                        <td>LM AUTO PEÇAS</td>
+                                        <td>12</td>
+                                        <td>R$705,00</td>
+                                        
+                                        <td><a href=""><i class="fa-solid fa-paperclip"></i></a></td>
+                                        <td><a href="detalhes_do_evento.html">Detalhes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="poin badge bg-danger px-3 w-75">Reprovado</span></td>
+                                        <td>
+                                            10/05/2022
+                                        </td>
+                                        <td>LM AUTO PEÇAS</td>
+                                        <td>12</td>
+                                        <td>R$705,00</td>
+                                        
+                                        <td><a href=""><i class="fa-solid fa-paperclip"></i></a></td>
+                                        <td><a href="detalhes_do_evento.html">Detalhes</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex justify-content-end"><button class="btn btn-primary">Novo pagamento</button></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane p-3 fade" id="atendimentos" role="tabpanel" aria-labelledby="atendimentos-tab">
+                        <div class="my-3">
+                            <h4>Pesquisa de atendimentos</h4>
+                            <form class="row" action="" method="post">
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" placeholder="Data inicial:">
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" placeholder="Data final:">
+                                </div>
+                                <div class="col-md-5">
+                                    <input type="text" class="form-control" placeholder="Palavra chave:">
+                                </div>
+                                <div class="col-md-1">
+                                    <button class="btn btn-primary w-100"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="d-flex justify-content-end"><button class="btn btn-success mb-3"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasatendimento" aria-controls="offcanvasatendimento">Novo atendimento</button></div>
+
+                        <div class="offcanvas offcanvas-end" style="width: 30%;" tabindex="-1" id="offcanvasatendimento" aria-labelledby="offcanvasatendimentoLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasatendimentoLabel">Novo registro</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <form class="row" action="">
+                                <div class="col-md-8 mb-3">
+                                    <label class="form-label" for="">Titulo</label>
+                                    <input class="form-control" type="text" placeholder="Título:">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label class="form-label" for="">Responsável</label>
+                                    <input class="form-control" type="text" placeholder="Setor ou pessoa:">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label class="form-label" for="">Descrição</label>
+                                    <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="">Status</label>
+                                    <select class="form-control" name="" id="">
+                                        <option value="" selected>Pendente</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="">Notificação</label>
+                                    <input class="form-control" type="text" placeholder="E-mail ou WhatsApp:">
+                                </div>
+                                <div class="col mt-3">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="group5" value="" id="customCheckinlh1">
+                                        <label class="form-check-label" for="customCheckinlh1">
+                                            Associado
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="group5" value="" id="customCheckinlh2">
+                                        <label class="form-check-label" for="customCheckinlh2">
+                                            Oficina
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end mt-3"><button class="btn btn-primary">Salvar</button></div>
+                              </form>
+                            </div>
+                          </div>
+
+                        <div class="d-flex justify-content-between bg-warning px-5 text-white p-3 text-uppercase" >20/08/2020 SOLICITOU PRAZO DE ENTREGA DO VEÍCULO <button class="arrow-collapse-button" data-bs-toggle="collapse" href="#collapsePecas" role="button" aria-expanded="false" aria-controls="collapsePecas"><img class="pecas-arrow" src="arrow-down.svg" alt=""></button></div>
+                        <div class="collapse show" id="collapsePecas">
+                            <div class="card card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="">Data abertura:</label>
+                                        <strong>20/08/2023 - 12:30</strong><br>
+
+                                        <label class="form-label" for="">Protocolo de atendimento:</label>
+                                        <strong>1827361826381726</strong><br>
+
+                                        <label class="form-label" for="">Placa:</label>
+                                        <strong>OQS-4454</strong><br>
+
+                                        <label class="form-label" for="">Operador:</label>
+                                        <strong>João Paulo</strong><br>
+
+                                        <label class="form-label" for="">Data conclusão:</label>
+                                        <strong>Em decorrência 14 horas</strong><br>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <b>Anotações do atendimento:</b>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint blanditiis facere at! Nesciunt quisquam nam fugit sapiente ex minima, repudiandae magnam ratione dolores sequi, quas quidem animi consectetur delectus officia?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim dicta harum error assumenda modi quos earum quam eius numquam quis iusto, eum, quia culpa dolores animi aut ipsa ut!</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >20/08/2020 VISTORIA DE QUALIDADE <button class="arrow-collapse-button" data-bs-toggle="collapse" href="#collapseatendimento2" role="button" aria-expanded="false" aria-controls="collapseatendimento2"><img class="pecas-arrow" src="arrow-down.svg" alt=""></button></div>
+                        <div class="collapse" id="collapseatendimento2">
+                            <div class="card card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="">Data abertura:</label>
+                                        <strong>20/08/2023 - 12:30</strong><br>
+
+                                        <label class="form-label" for="">Protocolo de atendimento:</label>
+                                        <strong>1827361826381726</strong><br>
+
+                                        <label class="form-label" for="">Placa:</label>
+                                        <strong>OQS-4454</strong><br>
+
+                                        <label class="form-label" for="">Operador:</label>
+                                        <strong>João Paulo</strong><br>
+
+                                        <label class="form-label" for="">Data conclusão:</label>
+                                        <strong>Em decorrência 14 horas</strong><br>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <b>Anotações do atendimento:</b>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint blanditiis facere at! Nesciunt quisquam nam fugit sapiente ex minima, repudiandae magnam ratione dolores sequi, quas quidem animi consectetur delectus officia?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim dicta harum error assumenda modi quos earum quam eius numquam quis iusto, eum, quia culpa dolores animi aut ipsa ut!</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >20/08/2020 ALTERAÇÃO DE DATA DE VENCIMENTO <button class="arrow-collapse-button" data-bs-toggle="collapse" href="#collapseatendimento3" role="button" aria-expanded="false" aria-controls="collapseatendimento3"><img class="pecas-arrow" src="arrow-down.svg" alt=""></button></div>
+                        <div class="collapse" id="collapseatendimento3">
+                            <div class="card card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="">Data abertura:</label>
+                                        <strong>20/08/2023 - 12:30</strong><br>
+
+                                        <label class="form-label" for="">Protocolo de atendimento:</label>
+                                        <strong>1827361826381726</strong><br>
+
+                                        <label class="form-label" for="">Placa:</label>
+                                        <strong>OQS-4454</strong><br>
+
+                                        <label class="form-label" for="">Operador:</label>
+                                        <strong>João Paulo</strong><br>
+
+                                        <label class="form-label" for="">Data conclusão:</label>
+                                        <strong>Em decorrência 14 horas</strong><br>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <b>Anotações do atendimento:</b>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint blanditiis facere at! Nesciunt quisquam nam fugit sapiente ex minima, repudiandae magnam ratione dolores sequi, quas quidem animi consectetur delectus officia?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim dicta harum error assumenda modi quos earum quam eius numquam quis iusto, eum, quia culpa dolores animi aut ipsa ut!</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="tab-pane p-3 fade show active" id="historico" role="tabpanel" aria-labelledby="historico-tab">
+                        
+                        <div class="row justify-content-center">
+                            <div class="col-md-5">
+                                <div class="card historico-left">
+                                    <h5 class="card-header d-flex justify-content-between">
+                                        <div>
+                                            <label>DATA DO REGISTRO</label><br>
+                                            <b>10/10/2010 - 20:45</b>
+                                        </div>
+                                        <div>
+                                            <label>ATENDENTE</label><br>
+                                            <b>João Paulo</b>
+                                        </div>
+                                        <div>
+                                            <label>SETOR</label><br>
+                                            <b>Evento</b>
+                                        </div>
+                                    </h5>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Anotações</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1 d-flex align-items-center justify-content-center">
+                                
+                            </div>
+                            <div class="col-md-5">
+                                
+                            </div>
+                        </div>
+                                 
+                        <div class="row justify-content-center history-start">
+                            <div class="col-md-5">
+                                
+                            </div>
+                            <div class="col-md-1 d-flex justify-content-center">
+                                
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card historico-right">
+                                    <h5 class="card-header d-flex justify-content-between">
+                                        <div>
+                                            <label>DATA DO REGISTRO</label><br>
+                                            <b>10/10/2010 - 20:45</b>
+                                        </div>
+                                        <div>
+                                            <label>ATENDENTE</label><br>
+                                            <b>João Paulo</b>
+                                        </div>
+                                        <div>
+                                            <label>SETOR</label><br>
+                                            <b>Evento</b>
+                                        </div>
+                                    </h5>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Anotações</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis architecto, obcaecati, sapiente vitae mollitia maxime distinctio amet sed suscipit odio illo rem aliquam asperiores dignissimos nam ipsum, veritatis culpa nisi?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
+
+
     <script type="module" src="assets/js/custom/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
@@ -491,6 +1225,7 @@
 
 
     <script>
+        
         document.addEventListener('DOMContentLoaded', function () {
             var genericExamples = document.querySelectorAll('[data-trigger]');
             for (i = 0; i < genericExamples.length; ++i) {

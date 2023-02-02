@@ -12,6 +12,48 @@
     border: none;
 }
 
+.arrow-collapse-button {
+    background-color: transparent;
+    border: none;
+}
+
+.arrow-collapse-button>img {
+    width: 15px;
+}
+
+.historico-ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.historico-left:before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 45%;
+    width: 0px;
+    z-index: 1;
+    right: -23px;
+    border: medium solid #c3c3c3;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent #ededed;
+}
+
+.historico-right:before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 85px;
+    width: 0;
+    z-index: 1;
+    left: -23px;
+    border: medium solid #c3c3c3;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #c3c3c347 transparent transparent;s
+}
+
 
 .month {
     padding: 10px;
