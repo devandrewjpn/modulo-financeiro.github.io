@@ -156,411 +156,45 @@
                     <div class="row">
                         <div class="col-12 d-flex justify-content-between align-items-center">
                             <div class="page-header-title">
-                                <h5 class="m-b-10">Oficinas</h5>
+                                <h5 class="m-b-10">Fluxogramas</h5>
                             </div>
                             <div class="d-flex align-items-center">
-                                <a href="" data-bs-toggle="modal" data-bs-target="#cadastrarOficina"
-                                    class="btn btn-primary text-white d-flex align-items-center">Cadastrar oficina</a>
+                                <a href="" class="btn btn-primary text-white d-flex align-items-center">Novo fluxo</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+<div class="row">
+    <div class="table-responsive my-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome da etapa</th>
+                    <th>Tempo estimado</th>
+                    <th>Tempo médio</th>
+                    <th>Status</th>
+                    <th>
 
-            
-            <div class="modal fade" id="cadastrarOficina" tabindex="-1" aria-labelledby="cadastrarOficinaLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen">
-                  <div class="modal-content">
-                    <div class="modal-header" style="border-bottom: 0;">
-                      <h1 class="modal-title fs-5" id="cadastrarOficinaLabel">Cadastrar nova oficina</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >dados da oficina<button class="arrow-collapse-button" data-bs-toggle="collapse" href="#dadosOficina" role="button" aria-expanded="false" aria-controls="dadosOficina"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
-                        <div class="collapse show" id="dadosOficina">
-                            <div class="card card-body">
-                                <form action="" class="row">
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">CNPJ</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <label for="">Razão Sociál</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-2 mb-3">
-                                        <label for="">Data de abertura</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">CEP</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">Rua</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-1 mb-3">
-                                        <label for="">Número</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">Complemento</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-2 mb-3">
-                                        <label for="">Contrato Social</label>
-                                        <input type="file" class="form-control">
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">Cartão CNPJ</label>
-                                        <input type="file" class="form-control">
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="">Observações</label>
-                                        <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
-                                    </div>
-                                </form>
-                            </div>
-                          </div>
-                          <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >contas bancárias<button class="arrow-collapse-button" data-bs-toggle="collapse" href="#dadosBanco" role="button" aria-expanded="false" aria-controls="dadosBanco"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
-                        <div class="collapse show" id="dadosBanco">
-                            <div class="card card-body">
-                                <form action="" class="row">
-                                    <div class="col-md-2 mb-3">
-                                        <label for="">Banco</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-2 mb-3">
-                                        <label for="">Tipo de conta</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-2 mb-3">
-                                        <label for="">Agência</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-2 mb-3">
-                                        <label for="">Conta</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-2 mb-3">
-                                        <label for="">Favorecido</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-2 d-flex align-items-center">
-                                        <div class="btn-group" role="group">
-                                            <input type="checkbox" class="btn-check" id="btnchecklitecol1" autocomplete="off">
-                                            <label class="btn btn-light-primary" for="btnchecklitecol1"><i class="fas fa-bookmark"></i></label>
-                                        </div>
-                                    </div>
-                                    <button class="ms-3 btn btn-primary w-auto">Adicionar conta</button>
-                                </form>
-                            </div>
-                          </div>
-                          <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >contatos<button class="arrow-collapse-button" data-bs-toggle="collapse" href="#dadosContatos" role="button" aria-expanded="false" aria-controls="dadosContatos"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
-                        <div class="collapse show" id="dadosContatos">
-                            <div class="card card-body">
-                                <form action="" class="row">
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">Nome</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">E-mail</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">Telefone</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">Setor</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">Nome</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">E-mail</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">Telefone</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="">Setor</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <button class="ms-3 btn btn-primary w-auto">Adicionar contato</button>
-                                </form>
-                            </div>
-                          </div>
-                          <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >documentos e fotos<button class="arrow-collapse-button" data-bs-toggle="collapse" href="#dadosDocumentos" role="button" aria-expanded="false" aria-controls="dadosDocumentos"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
-                        <div class="collapse show" id="dadosDocumentos">
-                            <div class="card card-body">
-                                <h4>Documentos</h4>
-                                <form action="" class="row">
-                                    <div class="col-md-4 mb-3">
-                                        <label for="">Cartão CNPJ</label>
-                                        <div class="d-flex">
-                                            <input type="file" class="form-control">
-                                        <button class="btn btn-primary">Enviar</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <label for="">Contrato social</label>
-                                        <div class="d-flex">
-                                            <input type="file" class="form-control">
-                                        <button class="btn btn-primary">Enviar</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <label for="">Documentos extras</label>
-                                        <div class="d-flex">
-                                            <input type="file" class="form-control">
-                                        <button class="btn btn-primary">Enviar</button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <h4>Fotos</h4>
-                                <div class="pc-uppy-3">
-                                    <div class="for-DragDrop" style="height: 200px;"></div>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >serviços e estrutura<button class="arrow-collapse-button" data-bs-toggle="collapse" href="#dadosServicos" role="button" aria-expanded="false" aria-controls="dadosServicos"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
-                        <div class="collapse show" id="dadosServicos">
-                            <div class="card card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h4>Serviços</h4>
-                                        <ul class="list-unstyled">
-                                            <li class="text-uppercase bg-light p-3">
-                                                pintura
-                                            </li>
-                                            <li class="text-uppercase p-3">
-                                                martelinho de ouro
-                                            </li>
-                                            <li class="text-uppercase bg-light p-3">
-                                                pequenos reparos
-                                            </li>
-                                        </ul>
-                                        <button class="btn btn-success">Adicionar serviço</button>
-                                        
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h4>Estrutura</h4>
-                                        <ul class="list-unstyled">
-                                            <li class="text-uppercase bg-light p-3">
-                                                cabine de pintura
-                                            </li>
-                                            <li class="text-uppercase p-3">
-                                                galpão para 10 carros
-                                            </li>
-                                            <li class="text-uppercase bg-light p-3">
-                                                recepção
-                                            </li>
-                                            <li class="text-uppercase p-3">
-                                                fachada
-                                            </li>
-                                        </ul>
-                                        <button class="btn btn-success">Adicionar estrutura</button>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="modal-footer" style="border-top: 0;">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="button" class="btn btn-primary">Cadastrar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            <div class="row mt-5 pt-3">
-
-                <div class="col-md-6 flex-fill col-xl-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="mb-3 text-primary">Credenciadas</h6>
-                            <div class="row d-flex align-items-center">
-                                <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">400 Oficinas</h3>
-                                </div>
-                                <div class="col-3 text-end">
-                                    <p class="">60%</p>
-                                </div>
-                            </div>
-                            <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-theme" role="progressbar" style="width: 20%;"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 flex-fill col-xl-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="mb-3 text-success">Referenciadas
-
-                            </h6>
-                            <div class="row d-flex align-items-center">
-                                <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">141 Oficinas</h3>
-                                </div>
-                                <div class="col-3 text-end">
-                                    <p class="">60%</p>
-                                </div>
-                            </div>
-                            <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%;"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 flex-fill col-xl-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="mb-3 text-warning">Em negociação</h6>
-                            <div class="row d-flex align-items-center">
-                                <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">1 Oficina</h3>
-                                </div>
-                                <div class="col-3 text-end">
-                                    <p class="">40%</p>
-                                </div>
-                            </div>
-                            <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%;"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 flex-fill col-xl-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="mb-3 text-secondary">Captando</h6>
-                            <div class="row d-flex align-items-center">
-                                <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">7 Oficinas</h3>
-                                </div>
-                                <div class="col-3 text-end">
-                                    <p class="">67%</p>
-                                </div>
-                            </div>
-                            <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 67%;"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 flex-fill col-xl-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="mb-3 text-danger">Bloqueadas</h6>
-                            <div class="row d-flex align-items-center">
-                                <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">1 Oficina</h3>
-                                </div>
-                                <div class="col-3 text-end">
-                                    <p class="">78%</p>
-                                </div>
-                            </div>
-                            <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 78%;"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="d-flex align-items-center justify-content-between">
-                    <h3 class="font-bold text-secondary ps-3">Aguardando</h3>
-                </div>
-                <div class="table-responsive my-4">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Situação</th>
-                                <th>Nome Fantasia</th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="poin badge bg-primary px-3">Aguardando documentação</span></td>
-                                <td>Oficina Martelação</td>
-                                <td>Campinas / SP</td>                                
-                                <td><a href="detalhe_oficina.html">Detalhes</a></td>
-                            </tr>
-                            <tr>
-                                <td><span class="poin badge bg-warning px-3">Pendente</span></td>
-                                <td>ABM Funilária e Pintura</td>
-                                <td>Belo Horizonte / MG</td>                                
-                                <td><a href="detalhe_oficina.html">Detalhes</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="d-flex align-items-center justify-content-between">
-                    <h3 class="font-bold text-secondary ps-3">Aguardando</h3>
-                </div>
-                <div class="table-responsive my-4">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Situação</th>
-                                <th>Nome Fantasia</th>
-                                <th>Cidade</th>
-                                <th>Eventos</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <img src="images/star.jpg" alt="">
-                                    <img src="images/star.jpg" alt="">
-                                    <img src="images/star-grey.jpg" alt="">
-                                </td>
-                                <td>Oficina Martelação</td>
-                                <td>Campinas / SP</td>                                
-                                <td><span class="poin badge bg-primary px-3">42</span></td>
-                                <td><a href="detalhe_oficina.html">Detalhes</a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="images/star.jpg" alt="">
-                                    <img src="images/star.jpg" alt="">
-                                    <img src="images/star.jpg" alt="">
-                                    <img src="images/star.jpg" alt="">
-                                    <img src="images/star-grey.jpg" alt="">
-                                </td>
-                                <td>ABM Funilaria e Pintura</td>
-                                <td>Campinas / SP</td>                                
-                                <td><span class="poin badge bg-primary px-3">42</span></td>
-                                <td><a href="detalhe_oficina.html">Detalhes</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-            </div>
-
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Evento</td>
+                    <td>30 dias</td>
+                    <td>30 dias</td>
+                    <td><span class="poin badge bg-success px-3">Ativo</span></td>                            
+                    <td>
+                        <a href="etapas.html" class="btn btn-sm btn-outline-primary">Editar</a>
+                        <button class="btn btn-sm btn-primary"><img width="20px" src="images/fluxograma-icon.svg" alt=""></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
         </div>
     </div>
     <script type="module" src="assets/js/custom/main.js"></script>
