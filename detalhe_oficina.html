@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CRM - Financeiro</title>
+    <title>CRM - Oficina</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -143,134 +143,32 @@
 
 
     <div class="pc-container">
-        <div class="pcoded-content bg-light">
+        <div class="pcoded-content bg-white ">
 
             <div class="page-header">
                 <div class="page-block">
                     <div class="row">
-                        <div class="col-12 d-flex justify-content-between align-items-center">
+                        <div class="col-12 d-flex align-items-center">
                             <div class="page-header-title">
-                                <h5 class="m-b-10">Eventos</h5>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <button class="me-2 btn btn-primary d-flex align-items-center"
-                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-                                    aria-controls="offcanvasBottom"><i class="fa-solid fs-6 fa-plus me-2"></i>Cadastrar
-                                    evento</button>
-                                <a href="abertura_evento.html"
-                                    class="btn btn-success text-white d-flex align-items-center"><i
-                                        class="fa-solid fs-6 fa-phone me-2"></i>Abertura de evento</a>
+                                <h5 class="m-b-10">Detalhes da oficina</h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div style="height: auto;" class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
-                aria-labelledby="offcanvasBottomLabel">
-                <div class="offcanvas-header bg-primary">
-                    <h5 class="text-white text-uppercase offcanvas-title" id="offcanvasBottomLabel">cadastrar tipo de
-                        evento</h5>
-                </div>
-                <div class="offcanvas-body">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div>
-                                    <label class="form-label" for="">Tipo do evento</label>
-                                    <input class="form-control" type="text" placeholder="Título">
-                                </div>
-                                <div class="mt-3">
-                                    <label class="form-label" for="">Descrição</label>
-                                    <textarea class="form-control" name="" id="" cols="30" rows="3"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-4">
-                                <div class="form-check">
-                                    <input id="datahora" class="form-check-input input-light-primary" type="checkbox"
-                                        checked="">
-                                    <label for="datahora" class="form-check-label">Solicitar data e
-                                        hora</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="consultor" class="form-check-input input-light-primary" type="checkbox">
-                                    <label for="consultor" class="form-check-label">Dados do consultor</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="envolvidos" class="form-check-input input-light-primary" type="checkbox">
-                                    <label for="envolvidos" class="form-check-label">Envolvidos</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="documentos" class="form-check-input input-light-primary" type="checkbox">
-                                    <label for="documentos" class="form-check-label">Documentos</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="fotos" class="form-check-input input-light-primary" type="checkbox">
-                                    <label for="fotos" class="form-check-label">Fotos</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="testemunhas" class="form-check-input input-light-primary"
-                                        type="checkbox">
-                                    <label for="testemunhas" class="form-check-label">Houve testemunhas</label>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
-                <div class="offcanvas-header bg-primary">
-                    <h5 class="text-white text-uppercase offcanvas-title" id="offcanvasBottomLabel">configurar campos
-                        adicionais</h5>
-                </div>
-                <div class="offcanvas-body">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label class="form-label" for="">Nome do campo</label>
-                                <input class="form-control" type="text" placeholder="Nome do campo">
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label" for="">Tipo</label>
-                                <input class="form-control" type="text" placeholder="Texto">
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label" for="">Obrigatório</label>
-                                <input class="form-control" type="text" placeholder="Tipo">
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label" for="">Tamanho</label>
-                                <select class="form-control" name="" id="">
-                                    <option value="" selected>6</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-
-                    <button class="mt-3 btn btn-light-primary btn-sm">
-                        Cadastrar
-                    </button>
-
-                    <button class="mt-3 btn btn-light-danger btn-sm" data-bs-dismiss="offcanvas">
-                        Cancelar
-                    </button>
-
-                </div>
-            </div>
-
-
-
             <div class="row mt-5 pt-3">
 
-                <div class="col-md-6 flex-fill col-xl-2">
+                <div class="col-md-6 flex-fill col-xl-3">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-3 text-primary">Em andamento</h6>
+                            <h6 class="mb-3 text-primary">Reparos em andamento</h6>
                             <div class="row d-flex align-items-center">
                                 <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">2 Eventos</h3>
+                                    <h3 class="f-w-300 d-flex align-items-center ">3 Reparos</h3>
                                 </div>
                                 <div class="col-3 text-end">
-                                    <p class="">20%</p>
+                                    <p class="">60%</p>
                                 </div>
                             </div>
                             <div class="progress m-t-20" style="height: 7px;">
@@ -280,59 +178,174 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 flex-fill col-xl-2">
+                <div class="col-md-6 flex-fill col-xl-3">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-3 text-danger">Em processo de negativa</h6>
+                            <h6 class="mb-3 text-secondary">Reparos em atraso
+
+                            </h6>
                             <div class="row d-flex align-items-center">
                                 <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">1 Evento</h3>
+                                    <h3 class="f-w-300 d-flex align-items-center ">1 Reparo</h3>
                                 </div>
                                 <div class="col-3 text-end">
                                     <p class="">60%</p>
                                 </div>
                             </div>
                             <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;"
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 60%;"
                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 flex-fill col-xl-2">
+                <div class="col-md-6 flex-fill col-xl-3">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-3 text-warning">Pendente</h6>
+                            <h6 class="mb-3 text-warning">Em negociação</h6>
                             <div class="row d-flex align-items-center">
                                 <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">1 Evento</h3>
+                                    <h3 class="f-w-300 d-flex align-items-center ">2 Reparos</h3>
                                 </div>
                                 <div class="col-3 text-end">
-                                    <p class="">90%</p>
+                                    <p class="">40%</p>
                                 </div>
                             </div>
                             <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%;"
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%;"
                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 flex-fill col-xl-2">
+                <div class="col-md-6 flex-fill col-xl-3">
                     <div class="card">
                         <div class="card-body">
                             <h6 class="mb-3 text-success">Concluídos</h6>
                             <div class="row d-flex align-items-center">
                                 <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">7 Eventos</h3>
+                                    <h3 class="f-w-300 d-flex align-items-center ">3 Reparos</h3>
                                 </div>
                                 <div class="col-3 text-end">
-                                    <p class="">100%</p>
+                                    <p class="">67%</p>
                                 </div>
                             </div>
                             <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 67%;"
                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-3 d-flex">
+                <div style="background-image: url(images/oficina-2.jpg);width: 100%;max-width: 250px;height: 220px;background-repeat: no-repeat;background-size: cover;background-position: center center;"></div>
+                <div class="p-3 d-flex justify-content-between w-100">
+                    <div class="">
+                        <h3 class="card-title">INDUSTRY AUTOMOTIVE</h3>
+                        <p class="card-text mt-2">AUTOMOTIVE INDUSTRY CENTER MASTER LTDA</p>
+                        <p class="mb-0">Rua Afonto Paulo, 33 - Barro Preto - Belo Horizonte / MG</p>
+                        <p class="mb-0"><i class="fa-solid fa-phone"></i> (31)3415-5451 / (31)3415-5451  </p>
+                        <p><i class="fa-brands fa-whatsapp"></i> (31)99444-5451</p>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-outline-primary me-1">Editar</button>
+                            <button class="btn btn-outline-success">Enviar uma mensagem</button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between">
+                        <div class="d-flex align-items-end flex-column">
+                            <div class="d-flex align-items-center">
+                                <img src="images/star.jpg" alt="">
+                                <img src="images/star.jpg" alt="">
+                                <img src="images/star.jpg" alt="">
+                                <img src="images/star-grey.jpg" alt="">
+                            </div>
+                            <span class="mb-3">3 serviços executados</span>
+                            <p class="m-0"><b>75%</b> Entregas no prazo</p>
+                            <p class="m-0"><b>80%</b> Qualidade do serviço</p>
+                            <p class="m-0"><b>90%</b> Relacionamento</p>
+                            <a href="">Ver avaliações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-primary px-5 text-white p-3 text-uppercase" >ultimos atendimentos</div>
+
+            <div class="table-responsive my-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Situação</th>
+                            <th>Placa</th>
+                            <th>Modelo</th>
+                            <th>Serviço</th>
+                            <th>Tempo</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="poin badge bg-primary px-3">Concluído</span></td>
+                            <td>GDF-6547</td>
+                            <td>Fiat Palio Attractive</td>
+                            <td>Colisão</td>
+                            <td><span class="poin badge bg-danger px-3">7 dias</span></td>                                
+                            <td><a href="">Detalhes</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="poin badge bg-primary px-3">Concluído</span></td>
+                            <td>GDF-6547</td>
+                            <td>Fiat Palio Attractive</td>
+                            <td>Colisão</td>
+                            <td><span class="poin badge bg-warning px-3">5 dias</span></td>                                
+                            <td><a href="">Detalhes</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="poin badge bg-primary px-3">Concluído</span></td>
+                            <td>GDF-6547</td>
+                            <td>Fiat Palio Attractive</td>
+                            <td>Colisão</td>
+                            <td><span class="poin badge bg-success px-3">3 dias</span></td>                                
+                            <td><a href="">Detalhes</a></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-center"><button class="btn btn-outline-primary">Ver todos</button></div>
+            </div>
+
+            <div class="bg-primary px-5 text-white p-3 text-uppercase" >serviço e estrutura</div>
+
+            <div class="row p-4">
+                <div class="col-md-6">
+                    <h4>Serviços</h4>
+                    <p class="mb-1 bg-light p-2 text-uppercase">pintura</p>
+                    <p class="mb-1 p-2 text-uppercase">martelinho de ouro</p>
+                    <p class="mb-1 bg-light p-2 text-uppercase">pequenos reparos</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Estrutura</h4>
+                    <p class="mb-1 bg-light p-2 text-uppercase">cabine de pintura</p>
+                    <p class="mb-1 p-2 text-uppercase">galpão</p>
+                    <p class="mb-1 bg-light p-2 text-uppercase">recepção</p>
+                    <p class="mb-1 p-2 text-uppercase">fachada</p>
+                </div>
+            </div>
+
+            <div class="bg-primary px-5 text-white p-3 text-uppercase" >financeiro</div>
+
+            <div class="row pt-3">
+
+                <div class="col-md-6 flex-fill col-xl-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="mb-3 text-primary">Total aprovado</h6>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-9">
+                                    <h3 class="f-w-300 d-flex align-items-center ">R$2450</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -340,105 +353,248 @@
                 <div class="col-md-6 flex-fill col-xl-2">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-3">Sindicância</h6>
+                            <h6 class="mb-3 text-success">Pago</h6>
                             <div class="row d-flex align-items-center">
                                 <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">3 Eventos</h3>
-                                </div>
-                                <div class="col-3 text-end">
-                                    <p class="">78%</p>
+                                    <h3 class="f-w-300 d-flex align-items-center ">R$450</h3>
                                 </div>
                             </div>
-                            <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 78%;"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 flex-fill col-xl-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="mb-3 text-warning">Em atraso</h6>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-9">
+                                    <h3 class="f-w-300 d-flex align-items-center ">R$1000</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 flex-fill col-xl-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="mb-3 text-secondary">Agendado</h6>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-9">
+                                    <h3 class="f-w-300 d-flex align-items-center ">R$1000</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 flex-fill col-xl-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="mb-3 text-danger">Faltante</h6>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-9">
+                                    <h3 class="f-w-300 d-flex align-items-center ">R$2000</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="d-flex align-items-center justify-content-between">
-                    <h3 class="font-bold text-secondary ps-3">Aguardando</h3>
-                    <select class="form-control w-auto pe-5" name="" id="">
-                        <option value="" selected>Todo o período</option>
-                    </select>
-                </div>
-                <div class="table-responsive my-4">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Situação</th>
-                                <th>Placa</th>
-                                <th>Tipo de evento</th>
-                                <th>Origem</th>
-                                <th>Prob. Fraude</th>
-                                <th>Temp. Decorrêcia</th>
-                                <th>Operador</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Aguardando atendimento</td>
-                                <td>
-                                    HES5951
-                                </td>
-                                <td>Roubo / Furto</td>
-                                <td>APP</td>
-                                <td><span class="poin badge bg-warning px-3">44%</span></td>
-                                <td><span class="poin badge bg-success px-3">00:32</span></td>
-                                <td><span class="poin badge bg-primary w-100">João Paulo</span></td>
-                                <td><a href="detalhes_do_evento.html">Detalhes</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="d-flex align-items-center justify-content-between">
-                    <h3 class="font-bold text-secondary ps-3">Em andamento</h3>
-                    <select class="form-control w-auto pe-5" name="" id="">
-                        <option value="" selected>Todo o período</option>
-                    </select>
-                </div>
-                <div class="table-responsive my-4">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Situação</th>
-                                <th>Placa</th>
-                                <th>Tipo de evento</th>
-                                <th>Origem</th>
-                                <th>Temp. Decorrêcia</th>
-                                <th>Operador</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Em processo de negativa</td>
-                                <td>
-                                    HES5951
-                                </td>
-                                <td>Roubo / Furto</td>
-                                <td>APP</td>
-                                <td><span class="poin badge bg-success px-3">00:32</span></td>
-                                <td><span class="poin badge bg-primary w-100">João Paulo</span></td>
-                            </tr>
-                            <tr>
-                                <td>Aguardando</td>
-                                <td>
-                                    HES5951
-                                </td>
-                                <td>Colisão</td>
-                                <td>TELEFONE</td>
-                                <td><span class="poin badge bg-danger px-3">8 dias</span></td>
-                                <td><span class="poin badge bg-primary w-100">João Paulo</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="table-responsive my-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Situação</th>
+                            <th>Data</th>
+                            <th>Empresa</th>
+                            <th>Items</th>
+                            <th>Valor</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="poin badge bg-success px-3 w-75">Pago</span></td>
+                            <td>
+                                10/05/2022
+                            </td>
+                            <td>LM AUTO PEÇAS</td>
+                            <td>12</td>
+                            <td>R$705,00</td>
+                            
+                            <td><a href=""><i class="fa-solid fa-paperclip"></i></a></td>
+                            <td><a href="detalhes_do_evento.html">Detalhes</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="poin badge bg-danger px-3 w-75">Reprovado</span></td>
+                            <td>
+                                10/05/2022
+                            </td>
+                            <td>LM AUTO PEÇAS</td>
+                            <td>12</td>
+                            <td>R$705,00</td>
+                            
+                            <td><a href=""><i class="fa-solid fa-paperclip"></i></a></td>
+                            <td><a href="detalhes_do_evento.html">Detalhes</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-end"><button class="btn btn-primary">Novo pagamento</button></div>
             </div>
+
+            <div class="bg-primary px-5 text-white p-3 text-uppercase" >atendimentos</div>
+
+            <div class="my-3">
+                <h4>Pesquisa de atendimentos</h4>
+                <form class="row" action="" method="post">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Data inicial:">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Data final:">
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="Palavra chave:">
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn btn-primary w-100"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex justify-content-end"><button class="btn btn-success mb-3"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasatendimento" aria-controls="offcanvasatendimento">Novo atendimento</button></div>
+
+            <div class="offcanvas offcanvas-end" style="width: 30%;" tabindex="-1" id="offcanvasatendimento" aria-labelledby="offcanvasatendimentoLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasatendimentoLabel">Novo registro</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <form class="row" action="">
+                    <div class="col-md-8 mb-3">
+                        <label class="form-label" for="">Titulo</label>
+                        <input class="form-control" type="text" placeholder="Título:">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label" for="">Responsável</label>
+                        <input class="form-control" type="text" placeholder="Setor ou pessoa:">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label class="form-label" for="">Descrição</label>
+                        <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="">Status</label>
+                        <select class="form-control" name="" id="">
+                            <option value="" selected>Pendente</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="">Notificação</label>
+                        <input class="form-control" type="text" placeholder="E-mail ou WhatsApp:">
+                    </div>
+                    <div class="col mt-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group5" value="" id="customCheckinlh1">
+                            <label class="form-check-label" for="customCheckinlh1">
+                                Associado
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group5" value="" id="customCheckinlh2">
+                            <label class="form-check-label" for="customCheckinlh2">
+                                Oficina
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end mt-3"><button class="btn btn-primary">Salvar</button></div>
+                  </form>
+                </div>
+              </div>
+
+            <div class="d-flex justify-content-between bg-warning px-5 text-white p-3 text-uppercase" >20/08/2020 SOLICITOU PRAZO DE ENTREGA DO VEÍCULO <button class="arrow-collapse-button" data-bs-toggle="collapse" href="#collapsePecas" role="button" aria-expanded="false" aria-controls="collapsePecas"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
+            <div class="collapse show" id="collapsePecas">
+                <div class="card card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="form-label" for="">Data abertura:</label>
+                            <strong>20/08/2023 - 12:30</strong><br>
+
+                            <label class="form-label" for="">Protocolo de atendimento:</label>
+                            <strong>1827361826381726</strong><br>
+
+                            <label class="form-label" for="">Placa:</label>
+                            <strong>OQS-4454</strong><br>
+
+                            <label class="form-label" for="">Operador:</label>
+                            <strong>João Paulo</strong><br>
+
+                            <label class="form-label" for="">Data conclusão:</label>
+                            <strong>Em decorrência 14 horas</strong><br>
+                        </div>
+                        <div class="col-md-8">
+                            <b>Anotações do atendimento:</b>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint blanditiis facere at! Nesciunt quisquam nam fugit sapiente ex minima, repudiandae magnam ratione dolores sequi, quas quidem animi consectetur delectus officia?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim dicta harum error assumenda modi quos earum quam eius numquam quis iusto, eum, quia culpa dolores animi aut ipsa ut!</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >20/08/2020 VISTORIA DE QUALIDADE <button class="arrow-collapse-button" data-bs-toggle="collapse" href="#collapseatendimento2" role="button" aria-expanded="false" aria-controls="collapseatendimento2"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
+            <div class="collapse" id="collapseatendimento2">
+                <div class="card card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="form-label" for="">Data abertura:</label>
+                            <strong>20/08/2023 - 12:30</strong><br>
+
+                            <label class="form-label" for="">Protocolo de atendimento:</label>
+                            <strong>1827361826381726</strong><br>
+
+                            <label class="form-label" for="">Placa:</label>
+                            <strong>OQS-4454</strong><br>
+
+                            <label class="form-label" for="">Operador:</label>
+                            <strong>João Paulo</strong><br>
+
+                            <label class="form-label" for="">Data conclusão:</label>
+                            <strong>Em decorrência 14 horas</strong><br>
+                        </div>
+                        <div class="col-md-8">
+                            <b>Anotações do atendimento:</b>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint blanditiis facere at! Nesciunt quisquam nam fugit sapiente ex minima, repudiandae magnam ratione dolores sequi, quas quidem animi consectetur delectus officia?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim dicta harum error assumenda modi quos earum quam eius numquam quis iusto, eum, quia culpa dolores animi aut ipsa ut!</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >20/08/2020 ALTERAÇÃO DE DATA DE VENCIMENTO <button class="arrow-collapse-button" data-bs-toggle="collapse" href="#collapseatendimento3" role="button" aria-expanded="false" aria-controls="collapseatendimento3"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
+            <div class="collapse" id="collapseatendimento3">
+                <div class="card card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="form-label" for="">Data abertura:</label>
+                            <strong>20/08/2023 - 12:30</strong><br>
+
+                            <label class="form-label" for="">Protocolo de atendimento:</label>
+                            <strong>1827361826381726</strong><br>
+
+                            <label class="form-label" for="">Placa:</label>
+                            <strong>OQS-4454</strong><br>
+
+                            <label class="form-label" for="">Operador:</label>
+                            <strong>João Paulo</strong><br>
+
+                            <label class="form-label" for="">Data conclusão:</label>
+                            <strong>Em decorrência 14 horas</strong><br>
+                        </div>
+                        <div class="col-md-8">
+                            <b>Anotações do atendimento:</b>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint blanditiis facere at! Nesciunt quisquam nam fugit sapiente ex minima, repudiandae magnam ratione dolores sequi, quas quidem animi consectetur delectus officia?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim dicta harum error assumenda modi quos earum quam eius numquam quis iusto, eum, quia culpa dolores animi aut ipsa ut!</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
 
         </div>
     </div>

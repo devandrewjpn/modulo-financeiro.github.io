@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CRM - Financeiro</title>
+    <title>CRM - Oficinas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -143,134 +143,250 @@
 
 
     <div class="pc-container">
-        <div class="pcoded-content bg-light">
+        <div class="pcoded-content bg-white">
 
             <div class="page-header">
                 <div class="page-block">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-between align-items-center">
                             <div class="page-header-title">
-                                <h5 class="m-b-10">Eventos</h5>
+                                <h5 class="m-b-10">Oficinas</h5>
                             </div>
                             <div class="d-flex align-items-center">
-                                <button class="me-2 btn btn-primary d-flex align-items-center"
-                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-                                    aria-controls="offcanvasBottom"><i class="fa-solid fs-6 fa-plus me-2"></i>Cadastrar
-                                    evento</button>
-                                <a href="abertura_evento.html"
-                                    class="btn btn-success text-white d-flex align-items-center"><i
-                                        class="fa-solid fs-6 fa-phone me-2"></i>Abertura de evento</a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#cadastrarOficina"
+                                    class="btn btn-primary text-white d-flex align-items-center">Cadastrar oficina</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div style="height: auto;" class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
-                aria-labelledby="offcanvasBottomLabel">
-                <div class="offcanvas-header bg-primary">
-                    <h5 class="text-white text-uppercase offcanvas-title" id="offcanvasBottomLabel">cadastrar tipo de
-                        evento</h5>
+
+            
+            <div class="modal fade" id="cadastrarOficina" tabindex="-1" aria-labelledby="cadastrarOficinaLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header" style="border-bottom: 0;">
+                      <h1 class="modal-title fs-5" id="cadastrarOficinaLabel">Cadastrar nova oficina</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >dados da oficina<button class="arrow-collapse-button" data-bs-toggle="collapse" href="#dadosOficina" role="button" aria-expanded="false" aria-controls="dadosOficina"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
+                        <div class="collapse show" id="dadosOficina">
+                            <div class="card card-body">
+                                <form action="" class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">CNPJ</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="">Razão Sociál</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="">Data de abertura</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">CEP</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">Rua</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-1 mb-3">
+                                        <label for="">Número</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">Complemento</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="">Contrato Social</label>
+                                        <input type="file" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">Cartão CNPJ</label>
+                                        <input type="file" class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="">Observações</label>
+                                        <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >contas bancárias<button class="arrow-collapse-button" data-bs-toggle="collapse" href="#dadosBanco" role="button" aria-expanded="false" aria-controls="dadosBanco"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
+                        <div class="collapse show" id="dadosBanco">
+                            <div class="card card-body">
+                                <form action="" class="row">
+                                    <div class="col-md-2 mb-3">
+                                        <label for="">Banco</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="">Tipo de conta</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="">Agência</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="">Conta</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="">Favorecido</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-2 d-flex align-items-center">
+                                        <div class="btn-group" role="group">
+                                            <input type="checkbox" class="btn-check" id="btnchecklitecol1" autocomplete="off">
+                                            <label class="btn btn-light-primary" for="btnchecklitecol1"><i class="fas fa-bookmark"></i></label>
+                                        </div>
+                                    </div>
+                                    <button class="ms-3 btn btn-primary w-auto">Adicionar conta</button>
+                                </form>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >contatos<button class="arrow-collapse-button" data-bs-toggle="collapse" href="#dadosContatos" role="button" aria-expanded="false" aria-controls="dadosContatos"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
+                        <div class="collapse show" id="dadosContatos">
+                            <div class="card card-body">
+                                <form action="" class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">Nome</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">E-mail</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">Telefone</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">Setor</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">Nome</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">E-mail</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">Telefone</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="">Setor</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <button class="ms-3 btn btn-primary w-auto">Adicionar contato</button>
+                                </form>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >documentos e fotos<button class="arrow-collapse-button" data-bs-toggle="collapse" href="#dadosDocumentos" role="button" aria-expanded="false" aria-controls="dadosDocumentos"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
+                        <div class="collapse show" id="dadosDocumentos">
+                            <div class="card card-body">
+                                <h4>Documentos</h4>
+                                <form action="" class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="">Cartão CNPJ</label>
+                                        <div class="d-flex">
+                                            <input type="file" class="form-control">
+                                        <button class="btn btn-primary">Enviar</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="">Contrato social</label>
+                                        <div class="d-flex">
+                                            <input type="file" class="form-control">
+                                        <button class="btn btn-primary">Enviar</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="">Documentos extras</label>
+                                        <div class="d-flex">
+                                            <input type="file" class="form-control">
+                                        <button class="btn btn-primary">Enviar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <h4>Fotos</h4>
+                                <div class="pc-uppy-3">
+                                    <div class="for-DragDrop" style="height: 200px;"></div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bg-primary px-5 text-white p-3 text-uppercase" >serviços e estrutura<button class="arrow-collapse-button" data-bs-toggle="collapse" href="#dadosServicos" role="button" aria-expanded="false" aria-controls="dadosServicos"><img class="pecas-arrow" src="images/arrow-down.svg" alt=""></button></div>
+                        <div class="collapse show" id="dadosServicos">
+                            <div class="card card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4>Serviços</h4>
+                                        <ul class="list-unstyled">
+                                            <li class="text-uppercase bg-light p-3">
+                                                pintura
+                                            </li>
+                                            <li class="text-uppercase p-3">
+                                                martelinho de ouro
+                                            </li>
+                                            <li class="text-uppercase bg-light p-3">
+                                                pequenos reparos
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-success">Adicionar serviço</button>
+                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4>Estrutura</h4>
+                                        <ul class="list-unstyled">
+                                            <li class="text-uppercase bg-light p-3">
+                                                cabine de pintura
+                                            </li>
+                                            <li class="text-uppercase p-3">
+                                                galpão para 10 carros
+                                            </li>
+                                            <li class="text-uppercase bg-light p-3">
+                                                recepção
+                                            </li>
+                                            <li class="text-uppercase p-3">
+                                                fachada
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-success">Adicionar estrutura</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="modal-footer" style="border-top: 0;">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="button" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="offcanvas-body">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div>
-                                    <label class="form-label" for="">Tipo do evento</label>
-                                    <input class="form-control" type="text" placeholder="Título">
-                                </div>
-                                <div class="mt-3">
-                                    <label class="form-label" for="">Descrição</label>
-                                    <textarea class="form-control" name="" id="" cols="30" rows="3"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-4">
-                                <div class="form-check">
-                                    <input id="datahora" class="form-check-input input-light-primary" type="checkbox"
-                                        checked="">
-                                    <label for="datahora" class="form-check-label">Solicitar data e
-                                        hora</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="consultor" class="form-check-input input-light-primary" type="checkbox">
-                                    <label for="consultor" class="form-check-label">Dados do consultor</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="envolvidos" class="form-check-input input-light-primary" type="checkbox">
-                                    <label for="envolvidos" class="form-check-label">Envolvidos</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="documentos" class="form-check-input input-light-primary" type="checkbox">
-                                    <label for="documentos" class="form-check-label">Documentos</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="fotos" class="form-check-input input-light-primary" type="checkbox">
-                                    <label for="fotos" class="form-check-label">Fotos</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="testemunhas" class="form-check-input input-light-primary"
-                                        type="checkbox">
-                                    <label for="testemunhas" class="form-check-label">Houve testemunhas</label>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
-                <div class="offcanvas-header bg-primary">
-                    <h5 class="text-white text-uppercase offcanvas-title" id="offcanvasBottomLabel">configurar campos
-                        adicionais</h5>
-                </div>
-                <div class="offcanvas-body">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label class="form-label" for="">Nome do campo</label>
-                                <input class="form-control" type="text" placeholder="Nome do campo">
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label" for="">Tipo</label>
-                                <input class="form-control" type="text" placeholder="Texto">
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label" for="">Obrigatório</label>
-                                <input class="form-control" type="text" placeholder="Tipo">
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label" for="">Tamanho</label>
-                                <select class="form-control" name="" id="">
-                                    <option value="" selected>6</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-
-                    <button class="mt-3 btn btn-light-primary btn-sm">
-                        Cadastrar
-                    </button>
-
-                    <button class="mt-3 btn btn-light-danger btn-sm" data-bs-dismiss="offcanvas">
-                        Cancelar
-                    </button>
-
-                </div>
-            </div>
-
-
+              </div>
 
             <div class="row mt-5 pt-3">
 
                 <div class="col-md-6 flex-fill col-xl-2">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-3 text-primary">Em andamento</h6>
+                            <h6 class="mb-3 text-primary">Credenciadas</h6>
                             <div class="row d-flex align-items-center">
                                 <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">2 Eventos</h3>
+                                    <h3 class="f-w-300 d-flex align-items-center ">400 Oficinas</h3>
                                 </div>
                                 <div class="col-3 text-end">
-                                    <p class="">20%</p>
+                                    <p class="">60%</p>
                                 </div>
                             </div>
                             <div class="progress m-t-20" style="height: 7px;">
@@ -283,17 +399,19 @@
                 <div class="col-md-6 flex-fill col-xl-2">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-3 text-danger">Em processo de negativa</h6>
+                            <h6 class="mb-3 text-success">Referenciadas
+
+                            </h6>
                             <div class="row d-flex align-items-center">
                                 <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">1 Evento</h3>
+                                    <h3 class="f-w-300 d-flex align-items-center ">141 Oficinas</h3>
                                 </div>
                                 <div class="col-3 text-end">
                                     <p class="">60%</p>
                                 </div>
                             </div>
                             <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;"
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%;"
                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
@@ -302,17 +420,17 @@
                 <div class="col-md-6 flex-fill col-xl-2">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-3 text-warning">Pendente</h6>
+                            <h6 class="mb-3 text-warning">Em negociação</h6>
                             <div class="row d-flex align-items-center">
                                 <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">1 Evento</h3>
+                                    <h3 class="f-w-300 d-flex align-items-center ">1 Oficina</h3>
                                 </div>
                                 <div class="col-3 text-end">
-                                    <p class="">90%</p>
+                                    <p class="">40%</p>
                                 </div>
                             </div>
                             <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%;"
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%;"
                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
@@ -321,17 +439,17 @@
                 <div class="col-md-6 flex-fill col-xl-2">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-3 text-success">Concluídos</h6>
+                            <h6 class="mb-3 text-secondary">Captando</h6>
                             <div class="row d-flex align-items-center">
                                 <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">7 Eventos</h3>
+                                    <h3 class="f-w-300 d-flex align-items-center ">7 Oficinas</h3>
                                 </div>
                                 <div class="col-3 text-end">
-                                    <p class="">100%</p>
+                                    <p class="">67%</p>
                                 </div>
                             </div>
                             <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 67%;"
                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
@@ -340,104 +458,101 @@
                 <div class="col-md-6 flex-fill col-xl-2">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-3">Sindicância</h6>
+                            <h6 class="mb-3 text-danger">Bloqueadas</h6>
                             <div class="row d-flex align-items-center">
                                 <div class="col-9">
-                                    <h3 class="f-w-300 d-flex align-items-center ">3 Eventos</h3>
+                                    <h3 class="f-w-300 d-flex align-items-center ">1 Oficina</h3>
                                 </div>
                                 <div class="col-3 text-end">
                                     <p class="">78%</p>
                                 </div>
                             </div>
                             <div class="progress m-t-20" style="height: 7px;">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 78%;"
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 78%;"
                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            
             <div class="row">
                 <div class="d-flex align-items-center justify-content-between">
                     <h3 class="font-bold text-secondary ps-3">Aguardando</h3>
-                    <select class="form-control w-auto pe-5" name="" id="">
-                        <option value="" selected>Todo o período</option>
-                    </select>
                 </div>
                 <div class="table-responsive my-4">
                     <table class="table">
                         <thead>
                             <tr>
                                 <th>Situação</th>
-                                <th>Placa</th>
-                                <th>Tipo de evento</th>
-                                <th>Origem</th>
-                                <th>Prob. Fraude</th>
-                                <th>Temp. Decorrêcia</th>
-                                <th>Operador</th>
+                                <th>Nome Fantasia</th>
+                                <th></th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Aguardando atendimento</td>
-                                <td>
-                                    HES5951
-                                </td>
-                                <td>Roubo / Furto</td>
-                                <td>APP</td>
-                                <td><span class="poin badge bg-warning px-3">44%</span></td>
-                                <td><span class="poin badge bg-success px-3">00:32</span></td>
-                                <td><span class="poin badge bg-primary w-100">João Paulo</span></td>
-                                <td><a href="detalhes_do_evento.html">Detalhes</a></td>
+                                <td><span class="poin badge bg-primary px-3">Aguardando documentação</span></td>
+                                <td>Oficina Martelação</td>
+                                <td>Campinas / SP</td>                                
+                                <td><a href="detalhe_oficina.html">Detalhes</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="poin badge bg-warning px-3">Pendente</span></td>
+                                <td>ABM Funilária e Pintura</td>
+                                <td>Belo Horizonte / MG</td>                                
+                                <td><a href="detalhe_oficina.html">Detalhes</a></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
+            </div>
+
+            <div class="row">
                 <div class="d-flex align-items-center justify-content-between">
-                    <h3 class="font-bold text-secondary ps-3">Em andamento</h3>
-                    <select class="form-control w-auto pe-5" name="" id="">
-                        <option value="" selected>Todo o período</option>
-                    </select>
+                    <h3 class="font-bold text-secondary ps-3">Aguardando</h3>
                 </div>
                 <div class="table-responsive my-4">
                     <table class="table">
                         <thead>
                             <tr>
                                 <th>Situação</th>
-                                <th>Placa</th>
-                                <th>Tipo de evento</th>
-                                <th>Origem</th>
-                                <th>Temp. Decorrêcia</th>
-                                <th>Operador</th>
+                                <th>Nome Fantasia</th>
+                                <th>Cidade</th>
+                                <th>Eventos</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Em processo de negativa</td>
                                 <td>
-                                    HES5951
+                                    <img src="images/star.jpg" alt="">
+                                    <img src="images/star.jpg" alt="">
+                                    <img src="images/star-grey.jpg" alt="">
                                 </td>
-                                <td>Roubo / Furto</td>
-                                <td>APP</td>
-                                <td><span class="poin badge bg-success px-3">00:32</span></td>
-                                <td><span class="poin badge bg-primary w-100">João Paulo</span></td>
+                                <td>Oficina Martelação</td>
+                                <td>Campinas / SP</td>                                
+                                <td><span class="poin badge bg-primary px-3">42</span></td>
+                                <td><a href="detalhe_oficina.html">Detalhes</a></td>
                             </tr>
                             <tr>
-                                <td>Aguardando</td>
                                 <td>
-                                    HES5951
+                                    <img src="images/star.jpg" alt="">
+                                    <img src="images/star.jpg" alt="">
+                                    <img src="images/star.jpg" alt="">
+                                    <img src="images/star.jpg" alt="">
+                                    <img src="images/star-grey.jpg" alt="">
                                 </td>
-                                <td>Colisão</td>
-                                <td>TELEFONE</td>
-                                <td><span class="poin badge bg-danger px-3">8 dias</span></td>
-                                <td><span class="poin badge bg-primary w-100">João Paulo</span></td>
+                                <td>ABM Funilaria e Pintura</td>
+                                <td>Campinas / SP</td>                                
+                                <td><span class="poin badge bg-primary px-3">42</span></td>
+                                <td><a href="detalhe_oficina.html">Detalhes</a></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
             </div>
 
         </div>
@@ -452,9 +567,45 @@
     <script src="assets/js/plugins/feather.min.js"></script>
     <script src="assets/js/pcoded.js"></script>
     <script src="assets/js/plugins/choices.min.js"></script>
+    <script src="../assets/js/plugins/uppy.min.js"></script>
 
 
+    <script>
+        const Tus = Uppy.Tus;
+        const DragDrop = Uppy.DragDrop;
+        const ProgressBar = Uppy.ProgressBar;
+        const StatusBar = Uppy.StatusBar;
+        const FileInput = Uppy.FileInput;
+        const Informer = Uppy.Informer;
+        const Dashboard = Uppy.Dashboard;
+        const Dropbox = Uppy.Dropbox;
+        const GoogleDrive = Uppy.GoogleDrive;
+        const Instagram = Uppy.Instagram;
+        const Webcam = Uppy.Webcam;
+        // Function for displaying uploaded files
+        const onUploadSuccess = (elForUploadedFiles) =>
+            (file, response) => {
+                const url = response.uploadURL
+                const fileName = file.name
 
+                const li = document.createElement('li')
+                const a = document.createElement('a')
+                a.href = url
+                a.target = '_blank'
+                a.appendChild(document.createTextNode(fileName))
+                li.appendChild(a)
+
+                document.querySelector(elForUploadedFiles).appendChild(li)
+            }
+        (function () {
+            const pc_uppy_3 = new Uppy.Core({ debug: true, autoProceed: true })
+            pc_uppy_3
+                .use(DragDrop, { target: '.pc-uppy-3 .for-DragDrop' })
+                .use(Tus, { endpoint: 'https://tusd.tusdemo.net/files/' })
+                .use(ProgressBar, { target: '.pc-uppy-3 .for-ProgressBar', hideAfterFinish: false })
+                .on('upload-success', onUploadSuccess('.pc-uppy-3 .uploaded-files ol'))
+        })();
+    </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
